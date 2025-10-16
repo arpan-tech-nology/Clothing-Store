@@ -129,14 +129,14 @@
 
                     <p class="width-96">Browse through our diverse range of meticulously crafted garments, designed to
                         bring out your individuality and cater to your sense of style.</p>
-                        <div class="padding">
+                        <div class="padding-top-bottom">
                             <button class="primary-btn">Shop Now</button>
                             
                         </div>
 
 
 
-                    <div class="buttons">
+                    <div class="buttons flex ">
                         <div class="buttons">
                             <div class="btn">
                                 <div class="number">200+</div>
@@ -813,7 +813,7 @@
 
                     <div class="details">
                         <div class="detail ">
-                            <div class="company">
+                            <div class="company width">
                                 <p class="heading">COMPANY</p>
                                 <p class="text">About</p>
                                   <p class="text">Features</p>
@@ -873,11 +873,24 @@
                             
                     
                         <div class="payments">
-                            <div class="payment"><i class="fa-brands fa-cc-visa clr"></i></div>
-                             <div class="payment"><i class="fa-brands fa-cc-amazon-pay clr"></i></div>
-                              <div class="payment"><i class="fa-brands fa-cc-paypal clr"></i></div>
-                               <div class="payment"><i class="fa-brands fa-cc-apple-pay clr"></i></div>
-                                <div class="payment"><i class="fa-brands fa-google-pay clr"></i></div>
+                            
+                    
+                                <img  src="images/visa.png">
+                    
+                                <img  src="images/Badge (1).png">
+
+                           
+
+                                <img  src="images/Badge (2).png">
+                          
+
+                                <img  src="images/Badge (3).png">
+                            
+                                <img  src="images/Badge (4).png">
+
+                            </div>
+                                
+
 
                         </div>
                     </div>
@@ -902,6 +915,39 @@
 
             slidesPerView: 3,
             spaceBetween: 30,
+             breakpoints:{
+                // 1272:{
+                //     slidesPerView: 4,
+                //     spaceBetween: 30,
+                // },
+                // 1065:{
+                //      slidesPerView: 4,
+                //     spaceBetween: 30,
+                // },
+                892:{
+
+                                slidesPerView: 3,
+                                spaceBetween:30,
+                },
+                882:{
+                                slidesPerView: 2,
+                                spaceBetween:30,
+                },
+                550:{
+                   slidesPerView: 1,
+                                spaceBetween:30, 
+                },
+                350:{
+                      slidesPerView: 1,
+                                spaceBetween:30,
+                },
+
+                300:{
+                    slidesPerView: 1,
+                                spaceBetween:30, 
+                }
+
+            },
             freeMode: true,
             navigation: {
                 nextEl: ".button-next",
@@ -912,18 +958,55 @@
 
 
     <script>
+
+
         var swiper =new Swiper(".mySwiPer",{
-            slidesPerView: 4,
-            spaceBetween: 30,
+            // slidesPerView: 4,
+            
+            breakpoints:{
+                1272:{
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                },
+                1065:{
+                     slidesPerView: 4,
+                    spaceBetween: 30,
+                },
+                892:{
+
+                                slidesPerView: 3,
+                                spaceBetween:30,
+                },
+                882:{
+                                slidesPerView: 2,
+                                spaceBetween:30,
+                },
+                550:{
+                   slidesPerView: 2,
+                                spaceBetween:30, 
+                },
+                400:{
+                      slidesPerView: 2,
+                                spaceBetween:30,
+                },
+
+            },
             autoplay:{
                 delay:2000
 
             }
+
+   
           
 
 
         });
+
+
+
     </script>
+
+    
 
     <script src="js/script.js"></script>
 

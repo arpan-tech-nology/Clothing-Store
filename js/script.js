@@ -2,7 +2,7 @@
 const Productdata = [
   {
     "id": 13456734,
-    "collection":"new-arrival",
+    "collection":["new-arrival","top-selling"],
     "title": " T-Shirt with Tape Details",
 
 
@@ -44,7 +44,7 @@ const Productdata = [
   },
   {
     "id": 13456735,
-      "collection":"new-arrival",
+      "collection":["new-arrival"],
     "title": "Skiny Fit Jeans ",
     "tags": ['men', 'formal', 'casual'],
     "original_price": "800",
@@ -75,7 +75,7 @@ const Productdata = [
   },
   {
     "id": 13456736,
-     "collection":"new-arrival",
+     "collection":["new-arrival","top-selling"],
     "title": "Checkered Shirt",
     "tags": ['women', 'casual', 'trending'],
     "original_price": "1200",
@@ -115,7 +115,7 @@ const Productdata = [
   },
   {
     "id": 13456737,
- "collection":"new-arrival",
+ "collection":["new-arrival"],
     "title": "Sleeve Striped T-Shirt",
     "tags": ['women', 'summer', 'party'],
     "original_price": "1500",
@@ -146,7 +146,7 @@ const Productdata = [
   },
   {
     "id": 13456738,
-    "collection":"top-selling",
+    "collection":["top-selling","new-arrival"],
     "title": "Vertical Striped Shirt",
     "tags": ['men', 'women', 'winter', 'casual'],
     "original_price": "1800",
@@ -186,7 +186,7 @@ const Productdata = [
   },
   {
     "id": 13456739,
-        "collection":"top-selling",
+    "collection":["top-selling"],
     "title": "Courage Graphic T-shirt ",
     "tags": ['men', 'summer', 'casual'],
     "original_price": "900",
@@ -217,7 +217,7 @@ const Productdata = [
   },
   {
     "id": 13456740,
-         "collection":"top-selling",
+    "collection":["top-selling"],
     "title": "Polo with Contrast Trims",
     "tags": ['kids', 'casual', 'fun'],
     "original_price": "350",
@@ -257,7 +257,7 @@ const Productdata = [
   },
   {
     "id": 13456741,
-        "collection":"top-selling",
+    "collection":["top-selling","new-arrival"],
     "title": "Faded Skinny Jeans",
     "tags": ['men', 'winter', 'premium'],
     "original_price": "5000",
@@ -288,7 +288,7 @@ const Productdata = [
   },
   {
     "id": 13456742,
-        "collection":"top-selling",
+        "collection":["top-selling","new-arrival"],
     "title": "Polo with Contrast Trims",
     "tags": ['women', 'fitness', 'sports'],
     "original_price": "700",
@@ -328,7 +328,7 @@ const Productdata = [
   },
   {
     "id": 13456743,
-        "collection":"top-selling",
+        "collection":["top-selling"],
     "title": "Gradient Graphic T-shirt",
     "tags": ['men', 'casual', 'winter'],
     "original_price": "1100",
@@ -359,7 +359,7 @@ const Productdata = [
   },
   {
     "id": 13456744,
-      "collection":"new-arrival",
+      "collection":["new-arrival"],
     "title": "Polo with Tipping Details",
     "tags": ['women', 'formal', 'elegant'],
     "original_price": "1300",
@@ -399,7 +399,7 @@ const Productdata = [
   },
   {
     "id": 13456745,
-      "collection":"new-arrival",
+      "collection":["new-arrival"],
     "title": "Black Striped T-shirt",
     "tags": ['men', 'women', 'sports', 'fitness'],
     "original_price": "850",
@@ -430,12 +430,12 @@ const Productdata = [
   },
   {
     "id": 13456746,
-      "collection":"new-arrival",
+      "collection":["new-arrival"],
     "title": "Bomber Jacket",
     "tags": ['men', 'women', 'casual', 'trendy'],
     "original_price": "2500",
     "selling_price": "1900",
-    "featured_image": "jacket-bomber.png",
+    "featured_image": "images/tshirt.png",
     "rating": "4.7",
     "stock": "7",
     "variants": [
@@ -445,7 +445,7 @@ const Productdata = [
         "color": "Green",
         "original_price": "2500",
         "selling_price": "1900",
-        "featured_image": "Project/jacket-bomber-green.png",
+        "featured_image": "images/tshirt.png",
         "rating": "4.7"
       },
       {
@@ -454,7 +454,7 @@ const Productdata = [
         "color": "Black",
         "original_price": "2600",
         "selling_price": "2000",
-        "featured_image": "Project/jacket-bomber-black.png",
+        "featured_image": "images/tshirt.png",
         "rating": "4.8"
       },
       {
@@ -463,19 +463,19 @@ const Productdata = [
         "color": "Burgundy",
         "original_price": "2700",
         "selling_price": "2100",
-        "featured_image": "Project/jacket-bomber-burgundy.png",
+        "featured_image": "images/tshirt.png",
         "rating": "4.6"
       }
     ]
   },
   {
     "id": 13456747,
-      "collection":"new-arrival",
+      "collection":["new-arrival"],
     "title": "Kids Denim Jacket",
     "tags": ['kids', 'casual', 'trendy'],
     "original_price": "800",
     "selling_price": "600",
-    "featured_image": "Project/kids-jacket-denim.png",
+    "featured_image": "images/shirt.png",
     "rating": "4.4",
     "stock": "11",
     "variants": [
@@ -485,7 +485,7 @@ const Productdata = [
         "color": "Blue",
         "original_price": "800",
         "selling_price": "600",
-        "featured_image": "Project/kids-jacket-blue.png",
+        "featured_image": "images/shirt.png",
         "rating": "4.4"
       },
       {
@@ -494,19 +494,19 @@ const Productdata = [
         "color": "Light Blue",
         "original_price": "850",
         "selling_price": "650",
-        "featured_image": "Project/kids-jacket-lightblue.png",
+        "featured_image": "images/shirt.png",
         "rating": "4.5"
       }
     ]
   },
   {
     "id": 13456748,
-     "collection":"top-selling",
+    "collection":["top-selling"],
     "title": "Formal Blazer",
     "tags": ['men', 'formal', 'office'],
     "original_price": "3500",
     "selling_price": "2700",
-    "featured_image": "Project/blazer-formal.png",
+    "featured_image": "images/image 8 (2).png",
     "rating": "4.8",
     "stock": "6",
     "variants": [
@@ -516,7 +516,7 @@ const Productdata = [
         "color": "Navy",
         "original_price": "3500",
         "selling_price": "2700",
-        "featured_image": "Project/blazer-formal-navy.png",
+        "featured_image": "images/image 8 (2).png",
         "rating": "4.8"
       },
       {
@@ -525,7 +525,7 @@ const Productdata = [
         "color": "Charcoal",
         "original_price": "3600",
         "selling_price": "2800",
-        "featured_image": "Project/blazer-formal-charcoal.png",
+        "featured_image": "images/image 8 (2).png",
         "rating": "4.9"
       },
       {
@@ -534,19 +534,19 @@ const Productdata = [
         "color": "Black",
         "original_price": "3700",
         "selling_price": "2900",
-        "featured_image": "Project/blazer-formal-black.png",
+        "featured_image": "images/image 8 (2).png",
         "rating": "4.7"
       }
     ]
   },
   {
     "id": 13456749,
-     "collection":"top-selling",
+     "collection":["top-selling","new-arrival"],
     "title": "Knit Sweater",
     "tags": ['women', 'winter', 'cozy'],
     "original_price": "1600",
     "selling_price": "1200",
-    "featured_image": "Project/sweater-knit.png",
+    "featured_image": "images/image 9 (2).png",
     "rating": "4.5",
     "stock": "13",
     "variants": [
@@ -556,7 +556,7 @@ const Productdata = [
         "color": "Cream",
         "original_price": "1600",
         "selling_price": "1200",
-        "featured_image": "Project/sweater-knit-cream.png",
+        "featured_image": "images/image 9 (2).png",
         "rating": "4.5"
       },
       {
@@ -565,7 +565,7 @@ const Productdata = [
         "color": "Grey",
         "original_price": "1650",
         "selling_price": "1250",
-        "featured_image": "Project/sweater-knit-grey.png",
+        "featured_image": "images/image 9 (2).png",
         "rating": "4.6"
       }
     ]
@@ -576,7 +576,7 @@ const Productdata = [
     "tags": ['men', 'formal', 'casual'],
     "original_price": "1400",
     "selling_price": "1000",
-    "featured_image": "Project/pants-chino.png",
+    "featured_image": "images/shirt.png",
     "rating": "4.3",
     "stock": "16",
     "variants": [
@@ -586,7 +586,7 @@ const Productdata = [
         "color": "Beige",
         "original_price": "1400",
         "selling_price": "1000",
-        "featured_image": "Project/pants-chino-beige.png",
+        "featured_image": "images/shirt.png",
         "rating": "4.3"
       },
       {
@@ -595,7 +595,7 @@ const Productdata = [
         "color": "Navy",
         "original_price": "1450",
         "selling_price": "1050",
-        "featured_image": "Project/pants-chino-navy.png",
+        "featured_image":"images/shirt.png",
         "rating": "4.4"
       },
       {
@@ -604,7 +604,7 @@ const Productdata = [
         "color": "Olive",
         "original_price": "1500",
         "selling_price": "1100",
-        "featured_image": "Project/pants-chino-olive.png",
+        "featured_image": "images/shirt.png",
         "rating": "4.2"
       }
     ]
@@ -615,7 +615,7 @@ const Productdata = [
     "tags": ['men', 'summer', 'casual'],
     "original_price": "1200",
     "selling_price": "850",
-    "featured_image": "Project/shirt-linen.png",
+    "featured_image": "images/image 9 (2).png",
     "rating": "4.6",
     "stock": "10",
     "variants": [
@@ -625,7 +625,7 @@ const Productdata = [
         "color": "White",
         "original_price": "1200",
         "selling_price": "850",
-        "featured_image": "Project/shirt-linen-white.png",
+        "featured_image": "images/image 9 (2).png",
         "rating": "4.6"
       },
       {
@@ -634,7 +634,7 @@ const Productdata = [
         "color": "Sky Blue",
         "original_price": "1250",
         "selling_price": "900",
-        "featured_image": "Project/shirt-linen-skyblue.png",
+        "featured_image": "images/image 9 (2).png",
         "rating": "4.7"
       }
     ]
@@ -645,7 +645,7 @@ const Productdata = [
     "tags": ['women', 'summer', 'elegant'],
     "original_price": "2200",
     "selling_price": "1650",
-    "featured_image": "Project/dress-maxi.png",
+    "featured_image": "images/image 7 (2).png",
     "rating": "4.8",
     "stock": "8",
     "variants": [
@@ -655,7 +655,7 @@ const Productdata = [
         "color": "Floral Print",
         "original_price": "2200",
         "selling_price": "1650",
-        "featured_image": "Project/dress-maxi-floral.png",
+        "featured_image": "images/image 7 (2).png",
         "rating": "4.8"
       },
       {
@@ -664,7 +664,7 @@ const Productdata = [
         "color": "Solid Red",
         "original_price": "2300",
         "selling_price": "1750",
-        "featured_image": "Project/dress-maxi-red.png",
+        "featured_image": "images/image 7 (2).png",
         "rating": "4.9"
       },
       {
@@ -673,7 +673,7 @@ const Productdata = [
         "color": "Navy Blue",
         "original_price": "2400",
         "selling_price": "1850",
-        "featured_image": "Project/dress-maxi-navy.png",
+        "featured_image": "images/image 7 (2).png",
         "rating": "4.7"
       }
     ]
@@ -684,7 +684,7 @@ const Productdata = [
     "tags": ['men', 'women', 'sports', 'fitness'],
     "original_price": "3000",
     "selling_price": "2300",
-    "featured_image": "Project/shoes-running.png",
+    "featured_image": "images/orangeShirt 10.png",
     "rating": "4.7",
     "stock": "19",
     "variants": [
@@ -694,7 +694,7 @@ const Productdata = [
         "color": "Black/White",
         "original_price": "3000",
         "selling_price": "2300",
-        "featured_image": "Project/shoes-running-blackwhite.png",
+        "featured_image": "images/orangeShirt 10.png",
         "rating": "4.7"
       },
       {
@@ -703,7 +703,7 @@ const Productdata = [
         "color": "Blue/Grey",
         "original_price": "3100",
         "selling_price": "2400",
-        "featured_image": "Project/shoes-running-bluegrey.png",
+        "featured_image": "images/orangeShirt 10.png",
         "rating": "4.8"
       },
       {
@@ -712,7 +712,7 @@ const Productdata = [
         "color": "Red/Black",
         "original_price": "3200",
         "selling_price": "2500",
-        "featured_image": "Project/shoes-running-redblack.png",
+        "featured_image": "images/orangeShirt 10.png",
         "rating": "4.6"
       }
     ]
@@ -852,20 +852,6 @@ dropDownsSideBar.forEach(dropDown => {
 
 
 
-// function displayProducts( productts=[]){
-//   let element=[];
-  
-//   for(let i=0;i<productts.length;i++){
-
-//    element.push(productts[i]);
-//     // console.log(element);
-
-//   }
-  
-//   return element ;
-// }
-// displayProducts( Productdata);
-
 
 function star(data){
   let star;
@@ -881,32 +867,29 @@ function star(data){
 star(Productdata);
 
 
+function getData(){
+
+ return Productdata;
+}
+// data(Productdata);
 
 
 
-function displayProducts(sectionId ,products ,collectionType ){
-  
-  // console.log(collection);
-  
+
+
+function displayProducts(sectionId,Productdata)
+{
+
   const clothcard =document.getElementById(sectionId);
-  // console.log(clothcard);
+  const displayData= Productdata
+  // console.log(displayData);
 
-  // const swiperWrapper=document.querySelector('.swiper-wrapper');
+  // for(let i=0;i<displayData.length;i++){
+    displayData.forEach(data=>{
+      
+      // if(collectionType==displayData[i].collection){
   
-  const displayData= products;
-  // console.log(displayData.collection);
-
-
-
-
-
-  for(let i=0;i<displayData.length;i++){
-
-    
-  if(collectionType==displayData[i].collection){
-    
-
-  let data=displayData[i];
+ 
 
   const newDiv1 = document.createElement('div');
   newDiv1.classList.add('card');
@@ -986,23 +969,50 @@ function displayProducts(sectionId ,products ,collectionType ){
   clothcard.appendChild(newDiv1);
 
   
+    // }
+  
+  })
+  return clothcard;
+}
+
+displayProducts("newArrival",Productdata);
 
 
 
-  // console.log(card);
+function filterProductsCollection(collectionType){
+
+    let filterdProducts=[];
+    const products=getData();
+    products.forEach(product=>{
+     let collections= product.collection;
+
+      try{
+
+        collections.forEach(collection=>{
+        
+   
+          if(collectionType==collection){
+         
+      
+            filterdProducts.push(product);
+            console.log(filterdProducts);
+      
+          }
+        })
+      }
+      catch{
+        
+
+      }
 
 
+
+    })
+    return filterdProducts;
   }
-}
-}
-// displayProducts("newArrival",Productdata,"new-arrival");
 
-
-
-
-// displayProducts("top-selling",Productdata,"top-selling");
-
-displayProducts("category",Productdata,"new-arrival");
-
-
+  const filterCollection=filterProductsCollection("top-selling" );
+  console.log(filterCollection)
+  
+  displayProducts("top-selling",filterCollection);
 
