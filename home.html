@@ -916,14 +916,7 @@
             slidesPerView: 3,
             spaceBetween: 30,
              breakpoints:{
-                // 1272:{
-                //     slidesPerView: 4,
-                //     spaceBetween: 30,
-                // },
-                // 1065:{
-                //      slidesPerView: 4,
-                //     spaceBetween: 30,
-                // },
+              
                 892:{
 
                                 slidesPerView: 3,
@@ -958,7 +951,6 @@
 
 
     <script>
-
 
         var swiper =new Swiper(".mySwiPer",{
             // slidesPerView: 4,
@@ -995,20 +987,18 @@
                 delay:2000
 
             }
-
-   
-          
-
-
         });
-
-
-
     </script>
 
-    
-
-    <script src="js/script.js"></script>
+<script src="js/script.js"></script>
+<script>
+const filterCollection1=filterProductsCollection("new-arrival");
+displayProducts("newArrival",filterCollection1);
+</script>
+<script>
+const filterCollection=filterProductsCollection("top-selling");
+displayProducts("top-selling",filterCollection);
+</script>
 
 </body>
 

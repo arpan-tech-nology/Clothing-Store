@@ -39,15 +39,23 @@
             <div class="cross"><i class="fa-solid fa-xmark"></i></div>
         </div>
 
-             <div class="nav-bar">
+            <div class="nav-bar" id="navbar">
 
-            <div class="logo">
+    
+            <div class="width">
+
+            <!-- </div> -->
+
+            <div class="logo d-flex ">
+                 <div>
+        <button class="sidebar-toggler sidebutton " title="sidebar"><i class="fa-solid fa-bars"></i></button>
+    </div>
                 <h1 class="heading">SHOP.CO</h1>
             </div>
 
             <div class="nav-items">
                 <ul class="nav-item">
-                    <li class="nav-list dropdown" data-target="menu1"><a class="nav-link" href="#">Shop <span
+                    <li class="nav-list dropdown padding" data-target="menu1"><a class="nav-link" href="#">Shop <span
                                 class="material-symbols-outlined">stat_minus_1</span></a>
 
                         <ul class="nav-subitem" data-target="menu1">
@@ -84,8 +92,31 @@
             </div>
 
 
-
+            </div>
         </div>
+
+        <div class="container" id="sidebar">
+        <div class="container-overlay sidebar-toggler"></div>
+        <ul class="menu">
+            <li style="text-align: right;" class="menuItem"><button class="sidebar-toggler  button2"><i class="fa-solid fa-xmark"></i></button></li>
+            <li class="menuItem"><a class="menuLink" href="#"> Shop</a></li>
+            <li id="buttonid" class="menuItem dropdown" data-target="menu1"><a class="menuLink" href="#">   On Sale
+                </a> <i class="fa-solid fa-caret-down arrow color"></i> </li>
+            <li class="sub-menu" data-target="menu1" id="pagesid">
+                <ul class="menu">
+                    <li class="menuItem"><a class="menuLink" href="#">Page1</a></li>
+                    <li class="menuItem"><a class="menuLink" href="#"> Page2</a></li>
+                    <li class="menuItem"><a class="menuLink" href="#"> Page3</a></li>
+                </ul>
+            </li>
+            <li class="menuItem"><a class="menuLink" href="#">New Arrivals</a></li>
+            <li class="menuItem"> <a class="menuLink" href="#">
+                    Brands</a>
+            </li>
+        </ul>
+    </div>
+
+
           <div class="line">
             <hr style="width:92%;margin: auto;background-color:#0000001A; border: none;height: 1px;">
             
@@ -100,17 +131,19 @@
                   </div>
 
         
-        
+       
         <div class="category" >
             
             <div class="center">
-                <div class="filter-section">
+                <div class="filter-section " id="sidebar2">
+                      <div class="container-overlay2 filter-toggler"></div>
                     <div class="filter">
 
                     
                         <div class="space-between">
                             <h3> Filters </h3>
-                            <img src="images/Frame (1).png">
+                            <img class="filter-img" src="images/Frame (1).png">
+                           <button class="filter-toggler button2"><i class="fa-solid fa-xmark"></i></button>
                             </div>
                                <hr style="width:100%;margin-top: 15px;margin-bottom: 15px;background-color:#0000001A; border: none;height: 1px;">
 
@@ -125,93 +158,100 @@
                                 </div>
 
                                  <hr style="width:100%;margin-top: 15px;margin-bottom: 15px;background-color:#0000001A; border: none;height: 1px;">
-                                <div class="space-between">
+                                <div class="space-between filter-dropdown" data-target="item1" >
                             <h3> Price </h3>
-                            <i class="fa-solid fa-angle-up"></i>
+
+                                
+                                <i class="fa-solid fa-angle-down arrow"></i>
+                           
                             <!-- <span class="material-symbols-outlined text">chevron_down</span> -->
                             </div>
+                            <div class="sub-filter-item" data-target="item1" >
 
-                            <div class="bar">
-                                <img src="images/Group 6.png">
+                                
+                                                            <div class="bar">
+                                                                <img src="images/Group 6.png">
+                                                            </div>
+                                                            <div class="text-price">
+                                                                <p>$50</p>
+                                                                <p>$200</p>
+                                
+                                
+                                                            </div>
                             </div>
 
-                                <div class="text-price">
-                                    <p>$50</p>
-                                    <p>$200</p>
-
-
-                                </div>
                                   <hr style="width:100%;margin-top: 15px;margin-bottom: 15px;background-color:#0000001A; border: none;height: 1px;">
 
-                            <div class="space-between">
+                            <div class="space-between filter-dropdown" data-target="item2">
                             <h3> Colors </h3>
-                            <i class="fa-solid fa-angle-up"></i>
+                            <i class="fa-solid fa-angle-down arrow"></i>
                         
                             </div>
+                           
+                            <div class="colors sub-filter-item"  data-target="item2">
+                                <div class="select-color clr1" data-color="green"><i class="fa-solid fa-check tick"></i></div>
+                                  <div class="select-color clr2" data-color="red"><i class="fa-solid fa-check tick"></i></div>
+                                    <div class="select-color clr3" data-color="yellow"><i class="fa-solid fa-check tick"></i></div>
+                                      <div class=" select-color clr4" data-color="orange"><i class="fa-solid fa-check tick"></i></div>
+                                        <div class="select-color clr5" data-color="blue"><i class="fa-solid fa-check tick"></i></div>
 
-                            <div class="colors">
-                                <div class="size clr1"><i class="fa-solid fa-circle border "></i></div>
-                                  <div class="size clr2"><i class="fa-solid fa-circle border"></i></div>
-                                    <div class="size clr3"><i class="fa-solid fa-circle border"></i></div>
-                                      <div class=" size clr4"><i class="fa-solid fa-circle border"></i></div>
-                                        <div class="size clr5"><i class="fa-solid fa-circle border"></i></div>
-
-                            </div>
-
-                             <div class="colors">
-                                <div class="size clr6"><i class="fa-solid fa-circle-check"></i></div>
-                                  <div class=" size clr7"><i class="fa-solid fa-circle border"></i></div>
-                                    <div class=" size clr8"><i class="fa-solid fa-circle border"></i></div>
-                                      <div class=" size clr9"><i class="fa-solid fa-circle border"></i></div>
-                                        <div class="size clr10"><i class="fa-solid fa-circle border"></i></div>
+      
+                                <div class="select-color clr6" data-color="blue"><i class="fa-solid fa-check tick"></i></div>
+                                  <div class=" select-color clr7" data-color="blue"><i class="fa-solid fa-check tick"></i></div>
+                                    <div class=" select-color clr8" data-color="pink"><i class="fa-solid fa-check tick"></i></div>
+                                      <div class=" select-color clr9" data-color="grey"><i class="fa-solid fa-check tick"></i></div>
+                                        <div class="select-color clr10" data-color="black"><i class="fa-solid fa-check tick"></i></div>
 
                             </div>
                              <hr style="width:100%;margin-top: 15px;margin-bottom: 15px;background-color:#0000001A; border: none;height: 1px;">
 
 
-                              <div class="space-between">
+                              <div class="space-between filter-dropdown" data-target="item3">
                             <h3> Size</h3>
-                            <i class="fa-solid fa-angle-up"></i>
+                            <i class="fa-solid fa-angle-down arrow"></i>
                         
                             </div>
+                            <div  class="sub-filter-item " data-target="item3">
 
                             <div class="size-buttons">
-                                <button class="btn">XX-Small</button>
-                                <button class="btn">X-Small</button>
+                                <button class="btn" data-size="XX-Small">XX-Small</button>
+                                <button class="btn" data-size="X-Small">X-Small</button>
 
                             </div>
                             <div class="size-buttons">
-                                <button class="btn">Small</button>
-                                <button class="btn">Medium</button>
+                                <button class="btn"data-size="small">Small</button>
+                                <button class="btn"data-size="medium">Medium</button>
 
                             </div>
 
                             <div class="size-buttons">
-                                <button class="btn">Large</button>
-                                <button class="btn">X-Large</button>
+                                <button class="btn"data-size="large">Large</button>
+                                <button class="btn"data-size="X-Large">X-Large</button>
 
                             </div>
 
                               <div class="size-buttons">
-                                <button class="btn">XXX-Large</button>
-                                <button class="btn">3X-Large</button>
+                                <button class="btn"data-size="XXX-Large">XXX-Large</button>
+                                <button class="btn"data-size="3X-Large">3X-Large</button>
 
                             </div>
 
                               <div class="size-buttons">
                            
-                                <button class="btn">4X-Large</button>
+                                <button class="btn"data-size="4X-Large">4X-Large</button>
+
+                            </div>
 
                             </div>
                               <hr style="width:100%;margin-top: 15px;margin-bottom: 15px;background-color:#0000001A; border: none;height: 1px;">
-                             <div class="space-between">
+                             <div class="space-between filter-dropdown" data-target="item4">
                             <h3> Dress Style</h3>
-                            <i class="fa-solid fa-angle-up"></i>
+                            <i class="fa-solid fa-angle-down arrow"></i>
                         
                             </div>
 
 
-                              <div >
+                              <div class="sub-filter-item" data-target="item4" >
                                     <ul class="list">
                                         <li class="space-between list-element">Casual  <span class="material-symbols-outlined text">chevron_right</span></li>
                                         <li class="space-between list-element">Formal  <span class="material-symbols-outlined text">chevron_right</span></li>
@@ -228,46 +268,41 @@
 
 
                 </div>
+
+                
                 <div class="clothing ">
 
                     <div class="flex center padding">
                         <h2>Casual
                             
                         </h2>
-                        <div class="flex">
+                        <div class="flex width">
 
                             <p class="paragraph-text padding">Showing 1-10 of 100 Products</p>
-                            <p class="paragraph-text ">Sort by:</p>
-                            <div class="flex">
-                                <h5>Most Popular </h5>  <i class="fa-solid fa-angle-down"></i>
-    
+                            <div class="paragraph-text1">
+                                <p class="paragraph-text ">Sort by:</p>
+                                <div class="flex">
+                                    <h5>Most Popular </h5>  <i class="fa-solid fa-angle-down"></i>
+        
+                                </div>
+
+                            </div>
+                            <div class="filter-btn filter-toggler ">
+                                <img class="padding" src="images/Frame (1).png">
                             </div>
                         </div>
+
                     </div>
 
 
 
                         
         <div class="cloth-collection padding grid " id="category">
-                <!-- <div class="swiper mySwiPer">
-                    <div class="swiper-wrapper" id="category">
-
-
-
-
-
-
-
-
-
-
-
-                        </div>
-                        </div> -->
-           
-
+            
+               
             
         </div>
+        <div id="notFound" class="not-found"></div>
 
 
 
@@ -280,7 +315,7 @@
         
 
   <hr style="width:100%;background-color:#0000001A; border: none;height: 1px;">
-                          <div class="previous-next-section">
+                          <!-- <div class="previous-next-section">
                             <button class="btn"> <i class="fa-solid fa-arrow-left"></i>Previous</button>
                             <div class="number">
                                 <button class="number-btn">1</button>
@@ -292,7 +327,7 @@
                                                <p class="paragraph-text">10</p>
                             </div>
                             <button class="btn">Next<i class="fa-solid fa-arrow-left"></i></button>
-                          </div>
+                          </div> -->
 
 
 
@@ -316,7 +351,7 @@
       
 
 
-        
+    
         <div class="footer">
             <div class="up-to-date">
 
@@ -377,7 +412,7 @@
 
                     <div class="details">
                         <div class="detail ">
-                            <div class="company">
+                            <div class="company width">
                                 <p class="heading">COMPANY</p>
                                 <p class="text">About</p>
                                   <p class="text">Features</p>
@@ -437,25 +472,40 @@
                             
                     
                         <div class="payments">
-                            <div class="payment"><i class="fa-brands fa-cc-visa clr"></i></div>
-                             <div class="payment"><i class="fa-brands fa-cc-amazon-pay clr"></i></div>
-                              <div class="payment"><i class="fa-brands fa-cc-paypal clr"></i></div>
-                               <div class="payment"><i class="fa-brands fa-cc-apple-pay clr"></i></div>
-                                <div class="payment"><i class="fa-brands fa-google-pay clr"></i></div>
+                            
+                    
+                                <img  src="images/visa.png">
+                    
+                                <img  src="images/Badge (1).png">
+
+                           
+
+                                <img  src="images/Badge (2).png">
+                          
+
+                                <img  src="images/Badge (3).png">
+                            
+                                <img  src="images/Badge (4).png">
+
+                            </div>
+                                
+
 
                         </div>
                     </div>
                 </div>
                 
             </div>
-
-        </div>
-        <!-- </body> -->
+   
     </div>
         </div>
     
   
 
       <script src="js/script.js"></script>
+      <script>displayProducts("category",Productdata);
+
+      </script>
+      
 </body>
 </html>
