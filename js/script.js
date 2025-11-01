@@ -1,11 +1,11 @@
 
+
+
 const Productdata = [
   {
     "id": 13456734,
     "collection": ["new-arrival", "top-selling"],
     "title": " T-Shirt with Tape Details",
-
-
     "tags": ['men', 'women', 'casual'],
     "original_price": "400",
     "selling_price": "300",
@@ -14,6 +14,7 @@ const Productdata = [
     "stock": "15",
     "variants": [
       {
+        "id": "13456734-1",
         "title": "T-Shirt with Tape Details",
         "size": "medium",
         "color": "Black",
@@ -23,6 +24,7 @@ const Productdata = [
         "rating": "4.5"
       },
       {
+        "id": "13456734-2",
         "title": "T-Shirt with Tape Details",
         "size": "large",
         "color": "Blue",
@@ -32,6 +34,7 @@ const Productdata = [
         "rating": "4.3"
       },
       {
+        "id": "13456734-3",
         "title": "T-Shirt with Tape Details",
         "size": "X-large",
         "color": "Red",
@@ -54,6 +57,7 @@ const Productdata = [
     "stock": "8",
     "variants": [
       {
+        "id": "13456735-1",
         "title": "Skiny Fit Jeans ",
         "size": "medium",
         "color": "Blue",
@@ -63,6 +67,7 @@ const Productdata = [
         "rating": "4.2"
       },
       {
+        "id": "13456735-2",
         "title": "Skiny Fit Jeans ",
         "size": "large",
         "color": "Green",
@@ -85,6 +90,7 @@ const Productdata = [
     "stock": "12",
     "variants": [
       {
+        "id": "13456736-1",
         "title": "Checkered Shirt",
         "size": "large",
         "color": "Red",
@@ -94,6 +100,7 @@ const Productdata = [
         "rating": "4.7"
       },
       {
+        "id": "13456736-2",
         "title": "Checkered Shirt",
         "size": "small",
         "color": "Red",
@@ -103,6 +110,7 @@ const Productdata = [
         "rating": "4.5"
       },
       {
+        "id": "13456736-3",
         "title": "Checkered Shirt",
         "size": "4x-large",
         "color": "Red",
@@ -125,6 +133,7 @@ const Productdata = [
     "stock": "6",
     "variants": [
       {
+        "id": "13456737-1",
         "title": "Sleeve Striped T-Shirt",
         "size": "Small",
         "color": "Orange",
@@ -134,6 +143,7 @@ const Productdata = [
         "rating": "4.8"
       },
       {
+        "id": "13456737-2",
         "title": "Sleeve Striped T-Shirt",
         "size": "medium",
         "color": "Orange",
@@ -156,6 +166,7 @@ const Productdata = [
     "stock": "20",
     "variants": [
       {
+        "id": "13456738-1",
         "title": "Vertical Striped Shirt",
         "size": "medium",
         "color": "Grey",
@@ -165,6 +176,7 @@ const Productdata = [
         "rating": "4.4"
       },
       {
+        "id": "13456738-2",
         "title": "Vertical Striped Shirt",
         "size": "large",
         "color": "Black",
@@ -174,6 +186,7 @@ const Productdata = [
         "rating": "4.5"
       },
       {
+        "id": "13456738-3",
         "title": "Vertical Striped Shirt",
         "size": "X-large",
         "color": "Maroon",
@@ -196,6 +209,7 @@ const Productdata = [
     "stock": "10",
     "variants": [
       {
+        "id": "13456739-1",
         "title": "Courage Graphic T-shirt ",
         "size": "x-small",
         "color": "Khaki",
@@ -205,6 +219,7 @@ const Productdata = [
         "rating": "4.1"
       },
       {
+        "id": "13456739-2",
         "title": "Courage Graphic T-shirt ",
         "size": "small",
         "color": "Olive",
@@ -227,6 +242,7 @@ const Productdata = [
     "stock": "25",
     "variants": [
       {
+        "id": "13456740-1",
         "title": "Polo with Contrast Trims",
         "size": "large",
         "color": "Blue",
@@ -236,6 +252,7 @@ const Productdata = [
         "rating": "4.6"
       },
       {
+        "id": "13456740-2",
         "title": "Polo with Contrast Trims",
         "size": "large",
         "color": "Blue",
@@ -245,6 +262,7 @@ const Productdata = [
         "rating": "4.7"
       },
       {
+        "id": "13456740-3",
         "title": "Polo with Contrast Trims",
         "size": "large",
         "color": "Blue",
@@ -267,6 +285,7 @@ const Productdata = [
     "stock": "5",
     "variants": [
       {
+        "id": "13456741-1",
         "title": "Faded Skinny Jeans",
         "size": "medium",
         "color": "Black",
@@ -276,6 +295,7 @@ const Productdata = [
         "rating": "4.9"
       },
       {
+        "id": "13456741-2",
         "title": "Faded Skinny Jeans",
         "size": "large",
         "color": "Black",
@@ -298,6 +318,7 @@ const Productdata = [
     "stock": "18",
     "variants": [
       {
+        "id": "13456742-1",
         "title": "Polo with Contrast Trims",
         "size": "small",
         "color": "Blue",
@@ -307,6 +328,7 @@ const Productdata = [
         "rating": "4.5"
       },
       {
+        "id": "13456742-2",
         "title": "Polo with Contrast Trims",
         "size": "medium",
         "color": "Blue",
@@ -316,6 +338,7 @@ const Productdata = [
         "rating": "4.6"
       },
       {
+        "id": "13456742-3",
         "title": "Polo with Contrast Trims",
         "size": "large",
         "color": "Blue",
@@ -338,6 +361,7 @@ const Productdata = [
     "stock": "14",
     "variants": [
       {
+        "id": "13456743-1",
         "title": "Gradient Graphic T-shirt",
         "size": "medium",
         "color": "Red",
@@ -347,6 +371,7 @@ const Productdata = [
         "rating": "4.3"
       },
       {
+        "id": "13456743-2",
         "title": "Gradient Graphic T-shirt",
         "size": "large",
         "color": "Blue",
@@ -369,6 +394,7 @@ const Productdata = [
     "stock": "9",
     "variants": [
       {
+        "id": "13456744-1",
         "title": "Polo with Tipping Details",
         "size": "small",
         "color": "Black",
@@ -378,6 +404,7 @@ const Productdata = [
         "rating": "4.6"
       },
       {
+        "id": "13456744-2",
         "title": "Polo with Tipping Details",
         "size": "medium",
         "color": "Beige",
@@ -387,6 +414,7 @@ const Productdata = [
         "rating": "4.7"
       },
       {
+        "id": "13456744-3",
         "title": "Polo with Tipping Details",
         "size": "large",
         "color": "Navy",
@@ -409,6 +437,7 @@ const Productdata = [
     "stock": "22",
     "variants": [
       {
+        "id": "13456745-1",
         "title": "Black Striped T-shirt",
         "size": "medium",
         "color": "Black",
@@ -418,6 +447,7 @@ const Productdata = [
         "rating": "4.2"
       },
       {
+        "id": "13456745-2",
         "title": "Black Striped T-shirt",
         "size": "large",
         "color": "Navy",
@@ -440,6 +470,7 @@ const Productdata = [
     "stock": "7",
     "variants": [
       {
+        "id": "13456746-1",
         "title": "Bomber Jacket",
         "size": "medium",
         "color": "Green",
@@ -449,6 +480,7 @@ const Productdata = [
         "rating": "4.7"
       },
       {
+        "id": "13456746-2",
         "title": "Bomber Jacket",
         "size": "large",
         "color": "Black",
@@ -458,6 +490,7 @@ const Productdata = [
         "rating": "4.8"
       },
       {
+        "id": "13456746-3",
         "title": "Bomber Jacket",
         "size": "X-large",
         "color": "Burgundy",
@@ -480,6 +513,7 @@ const Productdata = [
     "stock": "11",
     "variants": [
       {
+        "id": "13456747-1",
         "title": "Kids Denim Jacket",
         "size": "small",
         "color": "Blue",
@@ -489,6 +523,7 @@ const Productdata = [
         "rating": "4.4"
       },
       {
+        "id": "13456747-2",
         "title": "Kids Denim Jacket",
         "size": "large",
         "color": "Light Blue",
@@ -511,6 +546,7 @@ const Productdata = [
     "stock": "6",
     "variants": [
       {
+        "id": "13456748-1",
         "title": "Formal Blazer",
         "size": "medium",
         "color": "Navy",
@@ -520,6 +556,7 @@ const Productdata = [
         "rating": "4.8"
       },
       {
+        "id": "13456748-2",
         "title": "Formal Blazer",
         "size": "large",
         "color": "Charcoal",
@@ -529,6 +566,7 @@ const Productdata = [
         "rating": "4.9"
       },
       {
+        "id": "13456748-3",
         "title": "Formal Blazer",
         "size": "X-large",
         "color": "Black",
@@ -551,6 +589,7 @@ const Productdata = [
     "stock": "13",
     "variants": [
       {
+        "id": "13456749-1",
         "title": "Knit Sweater",
         "size": "Small",
         "color": "Cream",
@@ -560,6 +599,7 @@ const Productdata = [
         "rating": "4.5"
       },
       {
+        "id": "13456749-2",
         "title": "Knit Sweater",
         "size": "medium",
         "color": "Grey",
@@ -581,6 +621,7 @@ const Productdata = [
     "stock": "16",
     "variants": [
       {
+        "id": "13456750-1",
         "title": "Chino Pants",
         "size": "large",
         "color": "Beige",
@@ -590,6 +631,7 @@ const Productdata = [
         "rating": "4.3"
       },
       {
+        "id": "13456750-2",
         "title": "Chino Pants",
         "size": "small",
         "color": "Navy",
@@ -599,6 +641,7 @@ const Productdata = [
         "rating": "4.4"
       },
       {
+        "id": "13456750-3",
         "title": "Chino Pants",
         "size": "4x-large",
         "color": "Olive",
@@ -620,6 +663,7 @@ const Productdata = [
     "stock": "10",
     "variants": [
       {
+        "id": "13456751-1",
         "title": "Linen Shirt",
         "size": "x-large",
         "color": "White",
@@ -629,6 +673,7 @@ const Productdata = [
         "rating": "4.6"
       },
       {
+        "id": "13456751-2",
         "title": "Linen Shirt",
         "size": "Large",
         "color": "Sky Blue",
@@ -650,6 +695,7 @@ const Productdata = [
     "stock": "8",
     "variants": [
       {
+        "id": "13456752-1",
         "title": "Maxi Dress",
         "size": "small",
         "color": "Floral Print",
@@ -659,6 +705,7 @@ const Productdata = [
         "rating": "4.8"
       },
       {
+        "id": "13456752-2",
         "title": "Maxi Dress",
         "size": "medium",
         "color": "Solid Red",
@@ -668,6 +715,7 @@ const Productdata = [
         "rating": "4.9"
       },
       {
+        "id": "13456752-3",
         "title": "Maxi Dress",
         "size": "large",
         "color": "Navy Blue",
@@ -689,6 +737,7 @@ const Productdata = [
     "stock": "19",
     "variants": [
       {
+        "id": "13456753-1",
         "title": "Running Shoes",
         "size": "small",
         "color": "Black/White",
@@ -698,6 +747,7 @@ const Productdata = [
         "rating": "4.7"
       },
       {
+        "id": "13456753-2",
         "title": "Running Shoes",
         "size": "xxx-large",
         "color": "Blue/Grey",
@@ -707,6 +757,7 @@ const Productdata = [
         "rating": "4.8"
       },
       {
+        "id": "13456753-3",
         "title": "Running Shoes",
         "size": "small",
         "color": "Red/Black",
@@ -717,9 +768,8 @@ const Productdata = [
       }
     ]
   }
-];
+]
 
-let filterdProducts = [];
 
 
 
@@ -729,7 +779,6 @@ const subMenus = document.querySelectorAll('.nav-subitem');
 dropDowns.forEach(dropdown => {
   dropdown.addEventListener('mouseover', () => {
     subMenus.forEach(subMenu => {
-
       if (subMenu.dataset.target == dropdown.dataset.target) {
         if (subMenu.classList.contains('active')) {
           subMenu.classList.remove('active');
@@ -741,10 +790,8 @@ dropDowns.forEach(dropdown => {
       else {
         subMenu.classList.remove('active');
       }
-
     })
   })
-
   dropdown.addEventListener('mouseout', () => {
     subMenus.forEach(subMenu => {
       subMenu.classList.remove('active');
@@ -753,53 +800,22 @@ dropDowns.forEach(dropdown => {
 })
 
 
-
 const toogler = document.querySelectorAll('.sidebar-toggler');
-// console.log(toogler);
 const sidebar = document.getElementById('sidebar');
-// console.log(sidebar);
-
 const body = document.body;
 toogler.forEach(togler => {
-  togler.addEventListener('click', () => {
-    // console.log("click");
-
+togler.addEventListener('click', () => {
     if (sidebar.classList.contains('active')) {
       sidebar.classList.remove('active');
       body.classList.remove('no-scroll');
-
-
     }
     else {
       sidebar.classList.add('active');
       body.classList.add('no-scroll');
-
     }
   })
 })
 
-const toogler2 = document.querySelectorAll('.filter-toggler');
-const sidebar2 = document.querySelector('.filter-section');
-
-toogler2.forEach(togler=>{
-  togler.addEventListener('click',()=>{
-    // console.log("click");
-    if (sidebar2.classList.contains('active')) {
-      sidebar2.classList.remove('active');
-      body.classList.remove('no-scroll');
-
-
-    }
-    else {
-      sidebar2.classList.add('active');
-      body.classList.add('no-scroll');
-
-    }
-    
-    
-
-  })
-})
 
 
 
@@ -817,10 +833,7 @@ dropDownsSideBar.forEach(dropDown => {
         else {
           subMenu.classList.add('active');
           dropDown.classList.add('active');
-
-
         }
-
       }
       else {
         subMenu.classList.remove('active');
@@ -829,69 +842,22 @@ dropDownsSideBar.forEach(dropDown => {
   })
 })
 
-const filterDropDown =document.querySelectorAll('.filter-dropdown');
-const subPriceBar = document.querySelectorAll('.sub-filter-item');
-filterDropDown.forEach(dropDown=>{
-  dropDown.addEventListener('click',()=>{
-    subPriceBar.forEach(subMenu=>{
-      if (subMenu.dataset.target == dropDown.dataset.target) {
-        if (subMenu.classList.contains('active')) {
-          subMenu.classList.remove('active');
-          dropDown.classList.remove('active');
-        }
-        else {
-          subMenu.classList.add('active');
-          dropDown.classList.add('active');
-
-
-        }
-
-      }
-      // else {
-      //   subMenu.classList.remove('active');
-      // }
-      
-      
-    })
-  })
-})
-
- 
 
 
 
 
-// function getData() {
-
-//   return Productdata;
-// }
-// data(Productdata);
-
-
-
-function displayProducts(sectionId, ProductData) {
+function displayProducts(sectionId, productData) {
 const clothcard = document.getElementById(sectionId);
-
-clothcard.innerHTML = "";
-const displayData = ProductData;
-  // console.log(displayData);
-
-  // for(let i=0;i<displayData.length;i++){
+  clothcard.innerHTML = "";
+  const displayData = productData ? productData : Productdata;
   try {
-
-
-
     displayData.forEach(data => {
-
-      // if(collectionType==displayData[i].collection){
-
-
-
       const newDiv1 = document.createElement('div');
-      // newDiv1.classList.add('card');
       newDiv1.classList.add('swiper-slide');
+
       const divImg = document.createElement('div');
       divImg.classList.add('card-img');
+
       const imgTag = document.createElement('img');
       imgTag.classList.add('img');
       imgTag.src = data.featured_image;
@@ -913,7 +879,6 @@ const displayData = ProductData;
       let counter = 1;
       for (i = 0; i < 5; i++) {
         if (stars >= counter) {
-
           const star = document.createElement('i');
           star.classList.add("fa-solid", "fa-star", "color");
           starDiv.appendChild(star);
@@ -924,24 +889,15 @@ const displayData = ProductData;
           starDiv.appendChild(star);
         }
         counter += 1;
-
-
       }
-
-
-
 
       const textRating = document.createElement('div');
       textRating.classList.add('d-flex');
       textRating.innerHTML = data.rating;
 
-
       const paragraph = document.createElement('p');
       paragraph.classList.add('clr');
       paragraph.innerHTML = "/5";
-
-      // const price = document.createElement('div');
-      // price.classList.add('price');
 
       const discount = document.createElement('div');
       discount.classList.add('price-container');
@@ -950,23 +906,15 @@ const displayData = ProductData;
       const price1 = document.createElement('div');
       price1.classList.add('price');
       price1.classList.add('d-flex');
-
       price1.innerHTML = "$" + data.selling_price;
-      // const strike=document.createElement('s');
 
-
-      const paragraph1 = document.createElement('s');
+     const paragraph1 = document.createElement('s');
       paragraph1.classList.add('color');
       paragraph1.innerHTML = "$" + data.original_price;
-
-
 
       const discountButton = document.createElement('div');
       discountButton.classList.add('discount');
       discountButton.innerHTML = "-" + Math.trunc(((data.original_price - data.selling_price) / data.original_price) * 100) + "%";
-
-
-
 
       newDiv1.appendChild(divImg);
       divImg.appendChild(imgTag);
@@ -975,32 +923,19 @@ const displayData = ProductData;
       newDiv1.appendChild(ratingDiv);
       ratingDiv.appendChild(starDiv);
       ratingDiv.appendChild(textRating);
-
       textRating.appendChild(paragraph);
-      // newDiv1.appendChild(price);
       newDiv1.appendChild(discount);
       discount.appendChild(price1);
-
       price1.appendChild(paragraph1);
-
       discount.appendChild(discountButton);
-      // clothcard.appendChild(swiperWrapper);
-
       clothcard.appendChild(newDiv1);
-
-
-      // }
-
     })
-    // console.log(clothcard);
     return clothcard;
   }
   catch {
 
   }
-
 }
- 
 
 
 function filterProductsCollection(collectionType) {
@@ -1034,316 +969,5 @@ function filterProductsCollection(collectionType) {
   })
   return filterdProducts;
 }
-
-let filterArray={
-  color:[],
-  size:[],
-  price:[],
-
-}
-
-
-const allColors = document.querySelectorAll('.select-color');
-
-// console.log(allColors);
-allColors.forEach(tick => {
-  // console.log(tick,"tick");
-  tick.addEventListener('click', () => {
-    if (tick.classList.contains('active')) {
-      tick.classList.remove('active');
-      filterArray.color.splice(filterArray.color.indexOf(tick.dataset.color),1)
-
-    }
-    else {
-      tick.classList.add('active');
-      filterArray.color.push(tick.dataset.color);
-
-    }
-    displayProducts("category",filterdProductsData());
-
-    filterdProducts=[];
-
-// console.log();
-   
-    // console.log(filterArray.color);
-
-
-    if (filterArray.color == 0 && filterArray.size==0) {
-
-      displayProducts("category", Productdata);
-
-    }
-
-
-    // else {
-
-    //   let colorproducts = filterColors(colors);
-
-
-    //   const section = document.getElementById("notFound");
-    //   try{
-
-    //     if (colorproducts.length == 0) {
-  
-  
-  
-  
-    //       section.classList.add('active');
-    //       section.innerHTML = "Try Searching Other Filters. No Related Products Found."
-  
-  
-  
-  
-    //     }
-    //     else {
-    //       section.classList.remove('active');
-    //     }
-    //     displayProducts("category", colorproducts);
-    //   }
-    //   catch{
-
-    //   }
-
-
-    //   // filterdProducts = [];
-
-    // }
-
-
-
-  })
-
-});
-function filterdProductsData(){
-  let data=Productdata;
-  let filterProductsColor=[];
-  let filterProductsSize=[];
-  //  if (filterdProducts.length < 1) {
- 
-      data.forEach(product=>{
-      let variants=product.variants;
-        
-      
-        variants.forEach(variant=>{
-           let color = variant.color.toLowerCase();
-          let size=variant.size.toLocaleLowerCase();
-          // console.log(filterArray.color,"color");
-            if (filterArray.color.includes(color)) {
-              // console.log("uhjlk")
-          // filterdProducts.push(variant);
-          filterProductsColor.push(variant);
-          console.log(filterProductsColor);
-        }
-      
-        else if (filterArray.size.includes(size)) {
-          // console.log("uhjlk");
-          // filterdProducts.push(variant);
-          filterProductsSize.push(variant);
-          // console.log(filterdProducts);
-        }
-        
-        //  if(filterArray.color.includes(color) && filterArray.size.includes(size) ){
-        //   console.log("jhoilkg");
-
-        //  }     
-        filterProductsColor.forEach 
-      })
-      })
-    //  }
-   
-
-       
-   
-    //   console.log(filterdProducts.length);
-    //   let filterclr=[];
-    //    let data=Productdata;
-    //    data.forEach(product=>{
-    //     let variants=product.variants;
-    //      variants.forEach(variant=>{
-    //        let color = variant.color.toLowerCase();
-    //        if (filterArray.color.includes(color)) {
-    //           // console.log("uhjlk")
-    //       filterclr.push(variant);
-    //       console.log(filterdProducts);
-    //     }
-
-    //      })
-    //    })
-
-
-    // }
-      // console.log(filterdProducts);
-
-    // console.log(filterProductsColor);
-    // console.log(filterProductsSize);
-
-      return filterdProducts;
-      
-      
-    }
-
-  
-    
-// displayProducts("category",filterdProducts);
-
-
-// function filterColors(colors) {
-
-//   // console.log(colors)
-//   console.log("called");
-
-//   if (filterdProducts.length < 1) {
-//     products = getData();
-//     products.forEach(product => {
-//       variants = product.variants;
-
-
-//       variants.forEach(variant => {
-//         let color = variant.color.toLowerCase();
-//         // console.log(color)
-//         if (colors.includes(color)) {
-//           filterdProducts.push(variant);
-//           console.log(filterdProducts);
-//         }
-
-//       })
-
-
-//     })
-//     console.log(filterdProducts);
-
-//     return filterdProducts;
-
-//     // displayProducts("category",filterdProducts)
-
-//   }
-
-
-
-
-
-
-// }
-
-// filterColors(color=["red","blue"]);
-
-const buttons = document.querySelectorAll(".btn");
-let size=[];
-// console.log(buttons)
-buttons.forEach(btn => {
-
-  btn.addEventListener('click', () => {
-    if (btn.classList.contains('active')) {
-      btn.classList.remove('active');
-      filterArray.size.splice(filterArray.size.indexOf(btn.dataset.size),1)
-
-    }
-    else {
-      btn.classList.add('active');
-      filterArray.size.push(btn.dataset.size);
-    }
-
-  //  console.log(filterArray.size)
-    displayProducts("category",filterdProductsData());
-    filterdProducts=[];
-    //  if (filterArray.color == 0) {
-
-    //   displayProducts("category", Productdata);
-
-    // }
-     if (filterArray.color == 0 && filterArray.size==0) {
-
-      displayProducts("category", Productdata);
-
-    }
-
-
-    // btn.classList.toggle("active");
-
-
-    // const selectedSize = document.querySelectorAll('.btn.active');
-    // //  console.log(selectedSize)
-    // let sizes = [];
-    // selectedSize.forEach(productSize => {
-    //   sizes.push(productSize.dataset.size);
-
-    })
-
-
-    // console.log(filterSize(sizes));
-    // displayProducts("category", filterSize(sizes));
-
-    // filterdProducts = [];
-
-    // console.log(sizes);
-
-  })
-// })
-
-
-
-
-
-// function filterSize(sizes) {
-//   console.log(sizes,"sizes")
-
-//   console.log(filterdProducts.length,"filter");
-//   if (filterdProducts.length < 1) {
-//     products = getData();
-//     products.forEach(product => {
-//       variants = product.variants;
-
-
-//       variants.forEach(variant => {
-//         let size = variant.size.toLowerCase();
-//         // console.log(size)
-//         if (sizes.includes(size)) {
-//           filterdProducts.push(variant);
-
-//           // console.log(filterdProducts);
-//         }
-
-//       })
-
-//     })
-
-
-    // return filterdProducts;
-
-  // }
-  // else if (filterdProducts.length > 1) {
-  //   products = filterdProducts;
-  //   // console.log(products);
-  //   products.forEach(product => {
-  //     variants = product.variants;
-
-
-  //     variants.forEach(variant => {
-  //       let size = variant.size.toLowerCase();
-  //       console.log(size);
-  //       // size.forEach(size=>{
-  //       if (sizes.includes(size)) {
-  //         filterdProducts.push(variant);
-
-  //         console.log(filterdProducts);
-  //       }
-
-  //     })
-
-  //     // })
-
-  //   })
-
-
-  //   return filterdProducts;
-
-
-  // }
-
-
-
-// }
-
-
 
 

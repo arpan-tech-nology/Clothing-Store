@@ -143,11 +143,17 @@
                         <div class="space-between">
                             <h3> Filters </h3>
                             <img class="filter-img" src="images/Frame (1).png">
-                           <button class="filter-toggler button2"><i class="fa-solid fa-xmark"></i></button>
+                           <button class="filter-toggler button"><i class="fa-solid fa-xmark"></i></button>
                             </div>
                                <hr style="width:100%;margin-top: 15px;margin-bottom: 15px;background-color:#0000001A; border: none;height: 1px;">
+                <div class="filter-search-bar width">
+                    <i class="fa-solid fa-magnifying-glass"></i>
 
-                                <div >
+                   <input id="filter-search-bar" type="text" class="input-line1 " id="search" placeholder="Search">
+
+
+                </div>
+                                <!-- <div >
                                     <ul class="list">
                                         <li class="space-between list-element">T-shirts  <span class="material-symbols-outlined text">chevron_right</span></li>
                                         <li class="space-between list-element">Shorts  <span class="material-symbols-outlined text">chevron_right</span></li>
@@ -155,7 +161,7 @@
                                         <li class="space-between list-element">Hoodie  <span class="material-symbols-outlined text">chevron_right</span></li>
                                         <li class="space-between list-element">Jeans  <span class="material-symbols-outlined text">chevron_right</span></li>
                                     </ul>
-                                </div>
+                                </div> -->
 
                                  <hr style="width:100%;margin-top: 15px;margin-bottom: 15px;background-color:#0000001A; border: none;height: 1px;">
                                 <div class="space-between filter-dropdown" data-target="item1" >
@@ -170,14 +176,17 @@
 
                                 
                                                             <div class="bar">
-                                                                <img src="images/Group 6.png">
+
+                                                                 <input class="range" type="range"  min="0" max="5000" value="50" oninput="output.value = `$${this.value}`">
+                                                                 <output id="output">$50</output>
+                                                                <!-- <img src="images/Group 6.png"> -->
                                                             </div>
-                                                            <div class="text-price">
+                                                            <!-- <div class="text-price">
                                                                 <p>$50</p>
                                                                 <p>$200</p>
                                 
                                 
-                                                            </div>
+                                                            </div> -->
                             </div>
 
                                   <hr style="width:100%;margin-top: 15px;margin-bottom: 15px;background-color:#0000001A; border: none;height: 1px;">
@@ -244,7 +253,7 @@
 
                             </div>
                               <hr style="width:100%;margin-top: 15px;margin-bottom: 15px;background-color:#0000001A; border: none;height: 1px;">
-                             <div class="space-between filter-dropdown" data-target="item4">
+                             <!-- <div class="space-between filter-dropdown" data-target="item4">
                             <h3> Dress Style</h3>
                             <i class="fa-solid fa-angle-down arrow"></i>
                         
@@ -257,11 +266,11 @@
                                         <li class="space-between list-element">Formal  <span class="material-symbols-outlined text">chevron_right</span></li>
                                         <li class="space-between list-element">Party  <span class="material-symbols-outlined text">chevron_right</span></li>
                                         <li class="space-between list-element">Gym  <span class="material-symbols-outlined text">chevron_right</span></li>
-                                        <!-- <li class="space-between list-element">Jeans  <span class="material-symbols-outlined text">chevron_right</span></li> -->
+                                        <li class="space-between list-element">Jeans  <span class="material-symbols-outlined text">chevron_right</span></li>
                                     </ul>
-                                </div>
+                                </div> -->
 
-                                <div class="secondary-btn"><button class="btn1">Apply Filter</button></div>
+                                <div id="reset-btn" class="secondary-btn"><button class="btn1">Reset Filter</button></div>
 
                         </div>
 
@@ -503,6 +512,7 @@
   
 
       <script src="js/script.js"></script>
+      <script src="js/productFilter.js"></script>
       <script>displayProducts("category",Productdata);
 
       </script>

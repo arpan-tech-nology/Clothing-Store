@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Range Slider Demo</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 80px;
+  }
+
+  input[type="range"] {
+    width: 300px;
+    accent-color: #4caf50;
+  }
+
+  /* Optional: custom thumb for WebKit browsers */
+  input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #4caf50;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  output {
+    font-weight: bold;
+    margin-left: 10px;
+  }
+</style>
+</head>
+<body>
+
+  <h2>🎚️ Range Slider Example</h2>
+
+  <label for="volume">Volume:</label>
+  <input type="range" id="volume" name="volume" min="0" max="100" value="50" oninput="output.value = this.value">
+  <output id="output">50</output>
+
+</body>
+</html>

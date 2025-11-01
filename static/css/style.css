@@ -159,7 +159,7 @@ body.no-scroll{
     gap: 10px;
 }
 
-.search {
+.search,.filter-search-bar {
     width: 72%;
     display: flex;
     align-items: center;
@@ -171,7 +171,11 @@ body.no-scroll{
     gap: 5px;
 }
 
-.input-line {
+.filter-search-bar.width{
+    width: 90%;
+}
+
+.input-line,.input-line1 {
     border: none;
     outline: none;
     width: 350px;
@@ -179,6 +183,10 @@ body.no-scroll{
     background-color: aliceblue;
 
 }
+/* .input-line1.width{
+    width: 100%;
+    
+} */
 
 .sidebutton {
     display: none;
@@ -291,6 +299,16 @@ color: white;
     max-height: 300px;
     padding-left: 14px;
     filter: opacity(1);
+}
+.filter .bar{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.filter .bar .range{
+    width: 100%;
 }
 
  .filter-dropdown.active .arrow{
@@ -1334,10 +1352,13 @@ color: white;
     border-radius: 20px;
     
 
-
-
-
 }
+.filter-toggler.button{
+background-color: transparent;
+ border: none;
+ display: none;
+}
+
 .filter-btn{
     display: none;
     border-radius: 50%;
@@ -1484,7 +1505,8 @@ display: flex;
     color: white;
     border-radius: 20px;
     border: none;
-    padding: 10px 95px 10px 95px;
+    padding: 6px 95px 6px 95px;
+    font-size: 20px;
 }
 
 .filter .secondary-btn {
@@ -1876,7 +1898,9 @@ justify-content: space-between
 .filter-img{
     display: none;
 }
-
+.filter-toggler.button{
+    display: flex;
+}
 
 .container-overlay2{
     background-color: rgba(11, 11, 11, 0.3);
@@ -2033,6 +2057,7 @@ padding-bottom: 20px;}
 
 }
 @media screen and (max-width:630px){
+     
     .footer .information-section .information .details{
         flex-direction: column;
     }
@@ -2129,6 +2154,7 @@ padding-bottom: 20px;}
 
     .cloth-collection.grid {
         grid-template-columns: 1fr 1fr;
+        gap:10px;
     }
     
 }
@@ -2201,11 +2227,29 @@ padding-bottom: 20px;}
 
 
 .price-container{
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: start;
 
 }
 .price-container .discount{
     margin: 0px;
+}
+.clothing .padding{
+    font-size: 13px;
+}
+.filter {
+    width: 77%;
+}
+.sub-filter-item.active{
+    padding: 0px;
+    padding-top: 5px;
+}
+.filter .colors .select-color {
+    width: 35px;
+    height: 35px;
+}
+.secondary-btn .btn1 {
+    
+    padding: 6px 62px 6px 62px;
 }
 }
