@@ -16,7 +16,7 @@ const Productdata = [
       {
         "id": "13456734-1",
         "title": "T-Shirt with Tape Details",
-        "size": "medium",
+        "size": ["medium","small"],
         "color": "Black",
         "original_price": "400",
         "selling_price": "300",
@@ -26,7 +26,7 @@ const Productdata = [
       {
         "id": "13456734-2",
         "title": "T-Shirt with Tape Details",
-        "size": "large",
+        "size":["large"],
         "color": "Blue",
         "original_price": "450",
         "selling_price": "320",
@@ -36,7 +36,7 @@ const Productdata = [
       {
         "id": "13456734-3",
         "title": "T-Shirt with Tape Details",
-        "size": "X-large",
+        "size": ["X-large","small"],
         "color": "Red",
         "original_price": "480",
         "selling_price": "350",
@@ -843,7 +843,9 @@ dropDownsSideBar.forEach(dropDown => {
 })
 
 
-
+function getData() {
+  return Productdata;
+}
 
 
 function displayProducts(sectionId, productData) {

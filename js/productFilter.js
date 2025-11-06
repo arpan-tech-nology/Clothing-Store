@@ -44,9 +44,7 @@ filterDropDown.forEach(dropDown => {
 })
 
 
-function getData() {
-  return Productdata;
-}
+
 
 
 function checkEmptyFilteredArray() {

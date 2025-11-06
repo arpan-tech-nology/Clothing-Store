@@ -108,14 +108,13 @@
                 <!-- </div> -->
             <div class="product-images">
 
-                <div class="image"><img class="img" src="images/image 2.png"></div>
-                <div class="image"><img class="img" src="images/image 5.png"></div>
-                <div class="image"><img class="img" src="images/image 6.png"></div>
-
-
+                <!-- <div class="image"><img class="img" ></div>
+                <div class="image"><img class="img" ></div>
+                <div class="image"><img class="img" ></div> -->
+                
             </div>
             <div class="featured-img">
-                <img class="img" src="images/image 1.png">
+                <img class="img">
 
             </div>
 
@@ -124,17 +123,17 @@
 
         <div class="detail">
         <div class="heading-container left  margin-0 ">
-                            <h2 class="size ">ONE LIFE GRAPHIC T-SHIRT</h2>
+                            <h2 class="size"></h2>
                             </div>
                         <div class="rating">
 
-                        <div class="d-flex">
+                        <div class="star">
 
+                            <!-- <i class="fa-solid fa-star color"></i>
                             <i class="fa-solid fa-star color"></i>
                             <i class="fa-solid fa-star color"></i>
                             <i class="fa-solid fa-star color"></i>
-                            <i class="fa-solid fa-star color"></i>
-                            <i class="fa-solid fa-star-half color"></i>
+                            <i class="fa-solid fa-star-half color"></i> -->
                         </div>
                         <div class="d-flex">
                             4.5/<p class="clr">5</p>
@@ -146,8 +145,8 @@
 
                         <div class="price d-flex ">
                             $260
-                            <s class="color">$300</s>
                         </div>
+                        <s class="color">$300</s>
                         <div class="discount">-40%</div>
                     </div>
 
@@ -158,23 +157,31 @@
 
                             <p class="paragraph">Select Colors</p>
                             <div class="color-option">
-                                <div class="color1"><i class="fa-solid fa-circle-check"></i></div>
+                                <!-- <div class="color1"><i class="fa-solid fa-circle-check"></i></div>
                                 <div class="color2"><i class="fa-solid fa-circle"></i></div>
-                                <div class="color3"><i class="fa-solid fa-circle"></i></div>
+                                <div class="color3"><i class="fa-solid fa-circle"></i></div> -->
                             </div>
                              <hr style="width:100%;background-color:#0000001A; border: none;height: 1px;">
                             
                             <p class="paragraph">Choose Size</p>
                             <div class="size-button">
-                                <button class="btn">Small</button>
+                                <!-- <button class="btn">Small</button>
                                 <button class="btn">Medium</button>
-                                <button class="btn clr">Large</button>
-                                <button class="btn">X-Large</button>
+                                <button class="btn">Large</button>
+                                <button class="btn">X-Large</button> -->
                             </div>
                              <hr style="width:100%;background-color:#0000001A; border: none;height: 1px;">
                              <div class="quantity-button">
-                                <button class="btn"><i class="fa-solid fa-minus "></i><i class="fa-solid fa-1 padding"></i><i class="fa-solid fa-plus "></i></button>
-                                <button class="btn1">Add to Cart</button>
+                                <button class="btn d-flex "><i class="fa-solid fa-minus "></i><div class="quantity"></div><i class="fa-solid fa-plus "></i></button>
+                                <form id="form">
+                                    <input id="input-variant-size" type="hidden">
+                                    <input id="input-variant-id" type="hidden">
+                                    <input id="input-variant-quantity" type="hidden">
+                                    
+                                    <button class="btn1">Add to Cart</button>
+                                    
+                                </form>
+
 
                              </div>
                     
@@ -767,8 +774,8 @@
 
           </div>
 
-
-
+<script src="js/script.js"></script>
+<script src="js/produtPage.js"></script>
 
 </body>
 </html>

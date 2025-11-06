@@ -597,10 +597,11 @@ color: white;
 
 
 
-.price .color {
+.price-container .color {
     color: rgb(192, 185, 185);
 
 }
+
 
 
 .secondary-btn {
@@ -1088,25 +1089,10 @@ color: white;
 .product-detail-page .product-detail .color-option {
     display: flex;
     font-size: 35px;
+    gap:5px;
 }
 
-.product-detail-page .product-detail .color-option .color1 {
-    color: #4F4631;
 
-}
-
-.product-detail-page .product-detail .color-option .color2 {
-
-    color: #314F4A;
-
-
-}
-
-.product-detail-page .product-detail .color-option .color3 {
-    color: #31344F;
-
-
-}
 
 .product-detail-page .product-detail .size-button {
     display: flex;
@@ -1128,17 +1114,19 @@ color: white;
 
 }
 
-.product-detail-page .product-detail .size-button .btn.clr {
+/* .product-detail-page .product-detail .size-button .btn.clr {
     background-color: black;
     color: white;
-}
+} */
 
 .product-detail-page .product-detail .quantity-button .btn {
-    padding: 12px;
+    padding: 5px;
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 20px;
     border: none;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -1408,17 +1396,29 @@ background-color: transparent;
 }
 
 
-.filter .colors .select-color {
+.filter .colors .select-color,.circle {
     width:43px;
     height: 43px;
     border-radius: 50px;
     border: 2px solid #00000033;
-     display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     
 }
 
+ .fa-check{
+    display: none!important;
+ }
+ 
+.tick{
+    color: white;
+}
+ .circle.active .fa-check{
+    display: block!important;
+    
+
+ }
 .filter .colors .select-color .tick{
     color: white;
     display: none;
@@ -1427,7 +1427,11 @@ background-color: transparent;
 .filter .colors .select-color.active .tick{
 display: block;
 }
-
+.quantity{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 25px;
+}
 
 .filter .colors .select-color.clr1 {
     background-color: #00C12B;
@@ -1601,6 +1605,7 @@ display: flex;
     border: 1px solid #0000001A;
     width: 48%;
     border-radius: 20px;
+    height: max-content;
 
 
 
@@ -1648,10 +1653,11 @@ display: flex;
 }
 
 .cart-page .cart1 .space-between .button {
-    padding: 12px 20px 12px 20px;
+    padding: 5px 20px 5px 20px;
     border-radius: 20px;
     border: none;
     display: flex;
+    align-items: center;
     gap: 5px;
 }
 
