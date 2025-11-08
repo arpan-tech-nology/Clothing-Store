@@ -1,4 +1,3 @@
-
 const filterArray = {
   color: [],
   size: [],
@@ -7,7 +6,7 @@ const filterArray = {
 }
 
 
-
+//Filter Button to open Filter Container...!
 const toogler2 = document.querySelectorAll('.filter-toggler');
 const sidebar2 = document.querySelector('.filter-section');
 toogler2.forEach(togler => {
@@ -24,6 +23,7 @@ toogler2.forEach(togler => {
 })
 
 
+// Filter dropdown to open filter section
 const filterDropDown = document.querySelectorAll('.filter-dropdown');
 const subPriceBar = document.querySelectorAll('.sub-filter-item');
 filterDropDown.forEach(dropDown => {
@@ -44,17 +44,12 @@ filterDropDown.forEach(dropDown => {
 })
 
 
-
-
-
+// return the boolean values by cheking that object is empty or not...!
 function checkEmptyFilteredArray() {
   const filterArrayValues = Object.values(filterArray);
   let empty = true;
-  // console.log(filterArrayValues);
-  for (const value of filterArrayValues) {
-    // console.log(value.length)
-    // if (value.length > 0 && value[0]!=0) {
-     if (Array.isArray(value) && value.length > 0 && value[0] !== 0 && value[0] !== '') {
+    for (const value of filterArrayValues) {
+      if (Array.isArray(value) && value.length > 0 && value[0] !== 0 && value[0] !== '') {
       empty = false;
       break;
     }
@@ -63,10 +58,7 @@ function checkEmptyFilteredArray() {
 }
 
 
-
-
-
-
+//display the products according to color...!
 const allColors = document.querySelectorAll('.select-color');
 allColors.forEach(tick => {
   tick.addEventListener('click', () => {
@@ -83,25 +75,12 @@ allColors.forEach(tick => {
     }
     else {
       filterdProductsData();
-      const section = document.getElementById("notFound");
-      // try {
-      //   if (colorproducts.length == 0) {
-      //     section.classList.add('active');
-      //     section.innerHTML = "Try Searching Other Filters. No Related Products Found."
-      //  }
-      //   else {
-      //     section.classList.remove('active');
-      //   }
-      //   displayProducts("category", colorproducts);
-      // }
-      // catch {
-
-      // }
     }
   })
 });
 
 
+//display the products according to price...!
 const range = document.querySelector(".range");
 const output = document.getElementById('output');
 range.addEventListener('change', () => {
@@ -116,90 +95,13 @@ range.addEventListener('change', () => {
   else if (checkEmptyFilteredArray()) {
       displayProducts("category", Productdata);
     }
-
-    // else if (checkEmptyFilteredArray()) {
-      // }
       else {
-      // displayProducts("category", Productdata);
        filterdProductsData();
     }
     // filterArray.price = [];
 })
 
-
-function filterdProductsData() {
-  let data = Productdata;
-  const filterProductsColor = [];
-  const filterProductsSize = [];
-  const filterProductsPrice = [];
-  const filterSearchBar=[];
-  data.forEach(product => {
-    // console.log(filterProductsColor
-    // console.log(filterArray);
-    let variants = product.variants;
-    variants.forEach(variant => {
-      let color = variant.color.toLowerCase();
-      let size = variant.size.toLocaleLowerCase();
-      let price = parseFloat(variant.selling_price);
-      let title= variant.title.toLocaleLowerCase();
-
-      // let searchValue=FilterSearchBar.value;
-      // console.log(searchValue);
-      if (filterArray.color.includes(color)){
-        filterProductsColor.push(variant);
-      }
-      if (filterArray.size.includes(size)) {
-        filterProductsSize.push(variant);
-      }
-      // if (filterArray.price[0] >= price) {
-      //   filterProductsPrice.push(variant);
-      //   }
-       if (filterArray.price[0] >= price) {
-        filterProductsPrice.push(variant);
-      }
-     
-      // if(filterArray.search.includes(searchValue)){
-      //   console.log(filterSearchBar.push(variant));
-      // // }
-      //    if (searchValue && title.includes(searchValue)) {
-      //   filterSearchBar.push(variant);}
-
-      if ( title.includes(filterArray.search[0])) {
-        filterSearchBar.push(variant);
-      }
-
-       
-    })
-  })
-
-
-  let result = combineFilteration('id', Productdata, filterProductsColor, filterProductsSize, filterProductsPrice,filterSearchBar);
-  displayProducts("category", result);
-  filterProductsColor.length=0;
-  filterProductsSize.length=0;
-  filterProductsPrice.length=0;
-  filterSearchBar.length=0;
-}
-
-
-function combineFilteration(key, mainArray, ...arrays) {
-  if (!arrays.length) return [];
-  const activeArrays = arrays.filter(arr => arr.length > 0);
-
-  if (activeArrays.length === 0) return [];
-  const common = activeArrays.reduce((acc, curr) => {
-    return acc.filter(a => curr.some(c => c[key] === a[key]));
-  });
-
-  const result = mainArray.flatMap(product =>
-    product.variants.filter(variant =>
-      common.some(c => c[key] === variant[key])
-    )
-  );
-  return result;
-}
-
-
+//display the products according to size...!
 const buttons = document.querySelectorAll(".btn");
 let size = [];
 buttons.forEach(btn => {
@@ -221,15 +123,82 @@ buttons.forEach(btn => {
   })
 })
 
-const FilterSearchBar=document.getElementById("filter-search-bar");
+// filter all the products according to selected filter(color , size etc)...!
+function filterdProductsData() {
+  let data = Productdata;
+  const filterProductsColor = [];
+  const filterProductsSize = [];
+  const filterProductsPrice = [];
+  const filterSearchBar=[];
+  data.forEach(product => {
+    let variants = product.variants;
+    variants.forEach(variant => {
+      let color = variant.color.toLowerCase();
+      let sizes = variant.size;
+      console.log(sizes)
+      
+      let price = parseFloat(variant.selling_price);
+      let title= variant.title.toLocaleLowerCase();
 
+       sizes.forEach(size=>{
+        if (filterArray.size.includes(size)) {
+          filterProductsSize.push(variant);
+        }
+
+      })
+
+      if (filterArray.color.includes(color)){
+        filterProductsColor.push(variant);
+      }
+     
+
+     
+      if (filterArray.price[0] >= price) {
+        filterProductsPrice.push(variant);
+      }
+ 
+      if ( title.includes(filterArray.search[0])) {
+        filterSearchBar.push(variant);
+      }
+    })
+  })
+
+  let result = combineFilteration('id', Productdata, filterProductsColor, filterProductsSize, filterProductsPrice,filterSearchBar);
+  displayProducts("category", result);
+  filterProductsColor.length=0;
+  filterProductsSize.length=0;
+  filterProductsPrice.length=0;
+  filterSearchBar.length=0;
+}
+
+
+//It return one array which contain common products...!
+function combineFilteration(key, mainArray, ...arrays) {
+  if (!arrays.length) return [];
+  const activeArrays = arrays.filter(arr => arr.length > 0);
+
+  if (activeArrays.length === 0) return [];
+  const common = activeArrays.reduce((acc, curr) => {
+    return acc.filter(a => curr.some(c => c[key] === a[key]));
+  });
+
+  const result = mainArray.flatMap(product =>
+    product.variants.filter(variant =>
+      common.some(c => c[key] === variant[key])
+    )
+  );
+  return result;
+}
+
+
+//display the products that the user search...!
+const FilterSearchBar=document.getElementById("filter-search-bar");
 FilterSearchBar.addEventListener('input',()=>{
-  // filterArray.search.push(FilterSearchBar.value.toLowerCase().trim()); 
-//  const searchValue = FilterSearchBar.value.toLowerCase().trim();
  
    filterArray.search = [];
- if ( FilterSearchBar.value.toLowerCase().trim()!="") {
+ if ( FilterSearchBar.value.trim()!="") {
     filterArray.search.push(FilterSearchBar.value);
+      filterdProductsData();
   }
 
    if (checkEmptyFilteredArray()) {
@@ -239,9 +208,10 @@ FilterSearchBar.addEventListener('input',()=>{
   }
 
 })
-const resetButton=document.getElementById("reset-btn");
 
-// console.log(resetButton);
+
+//it clear all the applied filter in filter section...!
+const resetButton=document.getElementById("reset-btn");
 resetButton.addEventListener('click',()=>{
 // console.log("end")
 const activeColor=document.querySelectorAll(".select-color.active");

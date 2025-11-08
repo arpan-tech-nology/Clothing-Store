@@ -7,6 +7,7 @@ const deleivery=document.getElementById('deleivery');
 console.log(cart)
 const cart1=document.createElement('div');
 cart1.classList.add('cart1');
+cart1.classList.add('d-flex-space-between-only');
 
 const cartImage=document.createElement('div');
 cartImage.classList.add('cart-img');
@@ -17,9 +18,11 @@ image.classList.add('img');
 
 const leftSection=document.createElement('div');
 leftSection.classList.add('left-section');
+leftSection.classList.add('d-flex-space-between-only')
 
 const spaceBetween=document.createElement('div');
-spaceBetween.classList.add('space-between');
+// spaceBetween.classList.add('space-between');
+spaceBetween.classList.add('d-flex-space-between-only')
 
 const heading=document.createElement('h3');
 // cart1.classList.add('cart1');
@@ -48,7 +51,9 @@ colorText.classList.add('text');
 
 
 const price=document.createElement('div');
-price.classList.add('space-between');
+// price.classList.add('space-between');
+price.classList.add('d-flex-space-between-only')
+
 
 
 const priceheading=document.createElement('h2');

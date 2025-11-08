@@ -7,7 +7,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="static/css/style.css">
 
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
@@ -18,8 +17,6 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -28,8 +25,8 @@
 <body>
     <div class="home-page-container">
 
-        <div class="announcement">
-            <div class="text-wrap">
+        <div class="announcement d-flex-center-only">
+            <div class="text-wrap d-flex-center">
                 <div class="text">Sign up and get 20% off to your first order.</div>
                 <div class="text text-weight"> <u> Sign Up Now</u></div>
 
@@ -38,104 +35,78 @@
             <div class="cross"><i class="fa-solid fa-xmark"></i></div>
         </div>
 
-        <div class="nav-bar" id="navbar">
-
-    
-            <div class="width">
-
-            <!-- </div> -->
-
-            <div class="logo d-flex ">
-                 <div>
-        <button class="sidebar-toggler sidebutton " title="sidebar"><i class="fa-solid fa-bars"></i></button>
-    </div>
-                <h1 class="heading">SHOP.CO</h1>
-            </div>
-
-            <div class="nav-items">
-                <ul class="nav-item">
-                    <li class="nav-list dropdown padding" data-target="menu1"><a class="nav-link" href="#">Shop <span
-                                class="material-symbols-outlined">stat_minus_1</span></a>
-
-                        <ul class="nav-subitem" data-target="menu1">
-                            <li class="nav-sublist"><a class="nav-sublink" href="#">Categorie1</a></li>
-                            <li class="nav-sublist"><a class="nav-sublink" href="#">Categorie2 </a></li>
-                            <li class="nav-sublist"><a class="nav-sublink" href="#">Categorie3</a></li>
-                        </ul>
-
-                    </li>
-
-                    <li class="nav-list"><a class="nav-link" href="#">On Sale</a></li>
-                    <li class="nav-list"><a class="nav-link" href="#">New Arrivals</a></li>
-                    <li class="nav-list"><a class="nav-link" href="#">Brands</a>
-
-                    </li>
-                </ul>
-            </div>
-
-            <div class="icon">
-                <div class="search">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+        <div class="nav-bar d-flex-center" id="navbar">
 
 
-                    <input type="text" class="input-line" id="search" placeholder="Search">
+            <div class="width d-flex-space-between">
 
 
+                <div class="logo d-flex ">
+                    <div>
+                        <button class="sidebar-toggler sidebutton " title="sidebar"><i
+                                class="fa-solid fa-bars"></i></button>
+                    </div>
+                    <h1 class="heading">SHOP.CO</h1>
                 </div>
-                <span class="material-symbols-outlined">
-                    shopping_cart
-                </span>
-                <span class="material-symbols-outlined">
-                    account_circle
-                </span>
-            </div>
+
+                <div class="nav-items">
+                    <ul class="nav-item d-flex-space-between">
+                        <li class="nav-list"><a class="nav-link d-flex-center" href="categoryPage.html">Shop</a> </li>
+                        <li class="nav-list"><a class="nav-link d-flex-center" href="#">On Sale</a></li>
+                        <li class="nav-list"><a class="nav-link d-flex-center" href="#">New Arrivals</a></li>
+                        <li class="nav-list"><a class="nav-link d-flex-center" href="#">Brands</a>
+
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="icon d-flex-space-between">
+                    <div class="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+
+                        <input type="text" class="input-line" id="search" placeholder="Search">
+
+
+                    </div>
+                    <div id="search-item" class="header-search"></div>
+                    <span class="material-symbols-outlined">
+                        shopping_cart
+                    </span>
+                    <span class="material-symbols-outlined">
+                        account_circle
+                    </span>
+                </div>
 
 
             </div>
         </div>
 
         <div class="container" id="sidebar">
-        <div class="container-overlay sidebar-toggler"></div>
-        <ul class="menu">
-            <li style="text-align: right;" class="menuItem"> <button class="sidebar-toggler  button2"><i
-                        class="fa-solid fa-xmark"></i></button></li>
-            <li class="menuItem"><a class="menuLink" href="#"> Shop</a></li>
-            <li id="buttonid" class="menuItem dropdown" data-target="menu1"><a class="menuLink" href="#">   On Sale
-                </a> <i class="fa-solid fa-caret-down arrow"></i> </li>
-            <li class="sub-menu" data-target="menu1" id="pagesid">
-                <ul class="menu">
-                    <li class="menuItem"><a class="menuLink" href="#">Page1</a></li>
-                    <li class="menuItem"><a class="menuLink" href="#"> Page2</a></li>
-                    <li class="menuItem"><a class="menuLink" href="#"> Page3</a></li>
-                </ul>
-            </li>
-            <li class="menuItem"><a class="menuLink" href="#">New Arrivals</a></li>
-            <li class="menuItem"> <a class="menuLink" href="#">
-                    Brands</a>
-            </li>
-        </ul>
-    </div>
-
+            <div class="container-overlay sidebar-toggler"></div>
+            <ul class="menu d-flex-coloum">
+                <li style="text-align: right;" class="menuItem"> <button class="sidebar-toggler  button2"><i
+                            class="fa-solid fa-xmark"></i></button></li>
+                <li class="menuItem"><a class="menuLink" href="categoryPage.html"> Shop</a></li>
+                <li  class="menuItem "><a class="menuLink" href="#"> On Sale</a>  </li>
+                <li class="menuItem"><a class="menuLink" href="#">New Arrivals</a></li>
+                <li class="menuItem"> <a class="menuLink" href="#">
+                        Brands</a>
+                </li>
+            </ul>
+        </div>
 
         <div class="hero-section">
-
             <div class="content">
-
                 <div class="padding">
-
                     <div class="h1">
                         <h1 class="heading">FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
                     </div>
-
                     <p class="width-96">Browse through our diverse range of meticulously crafted garments, designed to
                         bring out your individuality and cater to your sense of style.</p>
-                        <div class="padding-top-bottom">
-                            <button class="primary-btn">Shop Now</button>
-                            
-                        </div>
-
-
-
+                    <div class="padding-top-bottom">
+                        <button class="primary-btn">Shop Now</button>
+                    </div>
                     <div class="buttons flex ">
                         <div class="buttons">
                             <div class="btn">
@@ -146,38 +117,23 @@
                                 <div class="number">2,000+</div>
                                 <p>High-Quality Products</p>
                             </div>
-
                         </div>
-
                         <div class="btn">
                             <div class="number">30,000+</div>
                             <p>Happy Customers</p>
-
-
                         </div>
                     </div>
-
                 </div>
-
             </div>
-
-            <div class="featured-img-container">
-
+            <div class="featured-img-container ">
                 <div><img class="star-img" src="images/Vector.png"> </div>
-
-
                 <img class="featured-img" src="images/boy-girl .png.jpg">
-
                 <div><img class="star1-img" src="images/Vector (1).png"></div>
             </div>
-
         </div>
 
-        <div class="brands">
-
-
+        <div class="brands d-flex-center-only">
             <div class="brand-left">
-
                 <img class="width" src="images/versach.png">
                 <img class="width-9" src="images/zara-logo-1 1.png">
                 <img class="width" src="images/gucci-logo-1 1.png">
@@ -185,761 +141,301 @@
             <div class="brand-right">
                 <img class="width-25" src="images/prada-logo-1 1.png">
                 <img class="width-25" src="images/calvinkelin.png">
-
             </div>
         </div>
-
-
-
 
         <div class="cloth-collection">
-            <div class="heading-container">
+            <div class="heading-container d-flex-center">
                 <h2 class="heading">NEW ARRIVALS</h2>
-
             </div>
-
             <div class="cloth-cards">
-                   <div class="swiper mySwiPer">
-                    <div class="swiper-wrapper" id="newArrival"  >
-                <!-- <div class="card">
-                    <div class="card-img">
-                        <img class="img" src="images/tshirt.png">
+                <div class="swiper mySwiPer">
+                    <div class="swiper-wrapper" id="newArrival">
                     </div>
-                    <div class="padding">
-                        <h2> T-Shirt with Tape Details</h2>
-                    </div>
-
-                    <div class="rating">
-
-                        <div class="d-flex">
-
-                            <i class="fa-solid fa-star color"></i>
-                            <i class="fa-solid fa-star color"></i>
-                            <i class="fa-solid fa-star color"></i>
-                            <i class="fa-solid fa-star color"></i>
-                            <i class="fa-solid fa-star-half color"></i>
-                        </div>
-                        <div class="d-flex">
-                            4.5/<p class="clr">5</p>
-
-                        </div>
-                    </div>
-                    <div class="price">
-                        $120
-                    </div>
-
-                </div> -->
-                <!-- <div class="card">
-                    <div class="card-img">
-
-                        <img class="img" src="images/pent.png">
-                    </div>
-                    <div class="padding">
-
-                        <h2>Skiny Fit Jeans </h2>
-                    </div>
-                    <div class="rating">
-
-                        <div class="d-flex">
-
-                            <i class="fa-solid fa-star color"></i>
-                            <i class="fa-solid fa-star color"></i>
-                            <i class="fa-solid fa-star color"></i>
-                            <i class="fa-solid fa-star-half color"></i>
-                        </div>
-                        <div class="d-flex">
-                            3.5/<p class="clr">5</p>
-
-                        </div>
-
-
-
-                    </div>
-                    <div class="d-flex price-container">
-
-                        <div class="price d-flex">
-                            $240
-                            <p class="color">$260</p>
-                        </div>
-                        <div class="discount">-20%</div>
-                    </div>
-
-
-                </div> -->
-                <!-- <div class="card">
-                    <div class="card-img">
-                        <img class="img" src="images/shirt.png">
-
-                    </div>
-                    <div class="padding">
-
-                        <h3>Checkered Shirt</h3>
-                    </div>
-
-                    <div class="rating">
-
-                        <div class="d-flex">
-
-                            <i class="fa-solid fa-star color"></i>
-                            <i class="fa-solid fa-star color"></i>
-                            <i class="fa-solid fa-star color"></i>
-                            <i class="fa-solid fa-star color"></i>
-                            <i class="fa-solid fa-star-half color"></i>
-                        </div>
-                        <div class="d-flex">
-                            4.5/<p class="clr">5</p>
-
-                        </div>
-                    </div>
-                    <div class="price">
-                        $180
-                    </div>
-                    <div>
-
-
-                    </div>
-
-                </div> -->
-                <!-- <div class="card">
-
-                    <div class="card-img">
-
-                        <img class="img" src="images/orangeShirt 10.png">
-                    </div>
-                    <div class="padding">
-
-                        <h3>Sleeve Striped T-Shirt</h3>
-                    </div>
-                    <div class="rating">
-
-                        <div class="d-flex">
-
-                            <i class="fa-solid fa-star color"></i>
-                            <i class="fa-solid fa-star color"></i>
-                            <i class="fa-solid fa-star color"></i>
-                            <i class="fa-solid fa-star color"></i>
-                            <i class="fa-solid fa-star-half color"></i>
-                        </div>
-                        <div class="d-flex">
-                            4.5/<p class="clr">5</p>
-
-                        </div>
-                    </div>
-                    <div class="d-flex price-container">
-
-                        <div class="price d-flex">
-                            $130
-                            <s class="color">$160</s>
-                        </div>
-                        <div class="discount">-30%</div>
-                    </div>
-
-
-
-                </div> -->
                 </div>
-                </div>
-
             </div>
-
-            <div class="secondary-btn"> <button class="btn">View All</button></div>
-
-
-
-
-
+            <div class="secondary-btn d-flex-center"> <button class="btn">View All</button></div>
         </div>
-
 
         <hr style="width:80%;margin: auto;background-color:#0000001A; border: none;height: 1px;">
 
         <div class="cloth-collection">
-            <div class="heading-container">
+            <div class="heading-container d-flex-center">
                 <h2 class="heading">TOP SELLING</h2>
-
             </div>
-
             <div class="cloth-cards ">
-                 <div class="swiper mySwiPer">
+                <div class="swiper mySwiPer">
                     <div class="swiper-wrapper " id="top-selling">
-
-                <!-- <div class="card">
-                    <div class="card-img">
-                        <img class="img" src="images/image 7 (1).png">
                     </div>
-                    <div class="padding">
-                        <h2>Vertical Striped Shirt</h2>
-                    </div>
-
-                    <div class="rating">
-
-                        <div class="d-flex">
-
-                            <i class="fa-solid fa-star color"></i>
-                            <i class="fa-solid fa-star color"></i>
-                            <i class="fa-solid fa-star color"></i>
-                            <i class="fa-solid fa-star color"></i>
-                            <i class="fa-solid fa-star color"></i>
-
-                        </div>
-                        <div class="d-flex">
-                            5.0/<p class="clr">5</p>
-
-                        </div>
-                    </div>
-                    <div class="d-flex price-container">
-
-                        <div class="price d-flex">
-                            $212
-                            <s class="color">$232</s>
-                        </div>
-                        <div class="discount">-20%</div>
-                    </div>
-
-
                 </div>
-                <div class="card">
-                    <div class="card-img">
-
-                        <img class="img" src="images/image 8 (1).png">
+            </div>
+            <div class="secondary-btn d-flex-center"> <button class="btn">View All</button></div>
+            <div class="dress-style d-flex-center">
+                <div class="color">
+                    <div class="heading-container d-flex-center">
+                        <h2 class="heading">BROWSE BY DRESS STYLE</h2>
                     </div>
-                    <div class="padding">
-
-                        <h2>Courage Graphic T-shirt </h2>
-                    </div>
-                    <div class="rating">
-
-                        <div class="d-flex">
-
-                            <i class="fa-solid fa-star color"></i>
-                            <i class="fa-solid fa-star color"></i>
-                            <i class="fa-solid fa-star color"></i>
-                            <i class="fa-solid fa-star color"></i>
-
+                    <div class="images-container d-flex-coloum">
+                        <div class="images d-flex-center">
+                            <div class="img">
+                                <p class="text">Casual</p>
+                                <img class="width" src="images/image 11.png">
+                            </div>
+                            <div class="img1">
+                                <p class="text">Formal</p>
+                                <img class="width" src="images/image 13.png">
+                            </div>
                         </div>
-                        <div class="d-flex">
-                            4.0/<p class="clr">5</p>
-
+                        <div class="images d-flex-center">
+                            <div class="img1">
+                                <p class="text">Party</p>
+                                <img class="width" src="images/image 12.png">
+                            </div>
+                            <div class="img">
+                                <p class="text">Gym</p>
+                                <img class="width" src="images/image 14.png">
+                            </div>
                         </div>
-
-
-
                     </div>
-                    <div class="price">
-                        $145
-                    </div>
-
-
-
-
                 </div>
-                <div class="card">
-                    <div class="card-img">
-                        <img class="img" src="images/image 9 (1).png">
-
-                    </div>
-                    <div class="padding">
-
-                        <h3>Loose Fit Bermuda Shorts</h3>
-                    </div>
-
-                    <div class="rating">
-
-                        <div class="d-flex">
-
-                            <i class="fa-solid fa-star color"></i>
-                            <i class="fa-solid fa-star color"></i>
-                            <i class="fa-solid fa-star color"></i>
-
-                        </div>
-                        <div class="d-flex">
-                            3.0/<p class="clr">5</p>
-
-                        </div>
-                    </div>
-                    <div class="price">
-                        $80
-                    </div>
-                    <div>
-
-
-                    </div>
-
-                </div>
-                <div class="card">
-
-                    <div class="card-img">
-
-                        <img class="img" src="images/image 10 (1).png">
-                    </div>
-                    <div class="padding">
-
-                        <h3>Faded Skinny Jeans</h3>
-                    </div>
-                    <div class="rating">
-
-                        <div class="d-flex">
-
-                            <i class="fa-solid fa-star color"></i>
-                            <i class="fa-solid fa-star color"></i>
-                            <i class="fa-solid fa-star color"></i>
-                            <i class="fa-solid fa-star color"></i>
-                            <i class="fa-solid fa-star-half color"></i>
-                        </div>
-                        <div class="d-flex">
-                            4.5/<p class="clr">5</p>
-
-                        </div>
-                    </div>
-
-                    <div class="price">
-                        $210
-                    </div>
-
-
-                </div>
-
-            </div> -->
-
-                    </div>
-                    </div>
-                    
-                    
-                    
-                    
-                    
-                </div>
-                <div class="secondary-btn"> <button class="btn">View All</button></div>
-
-        <div class="dress-style">
-            <div class="color">
-                <div class="heading-container">
-                    <h2 class="heading">BROWSE BY DRESS STYLE</h2>
-
-                </div>
-
-
-                <div class="images-container">
-                    <div class="images d-flex">
-                        <div class="img">
-                            <p class="text">Casual</p>
-                            <img class="width" src="images/image 11.png">
-
-                        </div>
-                        <div class="img1">
-                            <p class="text">Formal</p>
-                            <img class="width" src="images/image 13.png">
-                        </div>
-
-                    </div>
-                    <div class="images d-flex">
-                        <div class="img1">
-                            <p class="text">Party</p>
-                            <img class="width" src="images/image 12.png">
-                        </div>
-                        <div class="img">
-                            <p class="text">Gym</p>
-                            <img class="width" src="images/image 14.png">
-                        </div>
-
-
-
-                    </div>
-
-
-
-                </div>
-
             </div>
 
-        </div>
-
-        <div class="happy-customer">
-
-            <div class="heading-container left ">
-                <h2 class="heading left">OUR HAPPY CUSTOMER</h2>
-
+            <div class="happy-customer d-flex-space-between">
+                <div class="heading-container left ">
+                    <h2 class="heading left">OUR HAPPY CUSTOMER</h2>
+                </div>
+                <div class="margin d-flex">
+                    <i class="fa-solid fa-arrow-left button-prev "></i>
+                    <i class="fa-solid fa-arrow-right button-next"></i>
+                </div>
             </div>
-
-            <div class="margin d-flex">
-                <i class="fa-solid fa-arrow-left button-prev "></i>
-                <i class="fa-solid fa-arrow-right button-next"></i>
-            </div>
-        </div>
-        <div class="testimonials">
-
-
-
-
-
-            <div class="testimonial">
-
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper ">
-
-                        <!-- <div class="testimonial swiper-slide"> -->
-                        <div class="swiper-slide ">
-                            <div class="slider">
+            <div class="testimonials ">
+                <div class="testimonial">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper ">
+                            <div class="swiper-slide ">
+                                <div class="slider">
+                                    <div class="stars  d-flex">
+                                        <i class="fa-solid fa-star color"></i>
+                                        <i class="fa-solid fa-star color"></i>
+                                        <i class="fa-solid fa-star color"></i>
+                                        <i class="fa-solid fa-star color"></i>
+                                        <i class="fa-solid fa-star color"></i>
+                                    </div>
+                                    <div class="heading d-flex-center-only">
+                                        <h4>Saran M.</h4>
+                                        <i class="fa-solid fa-circle-check clr"></i>
+                                    </div>
+                                    <p class="text-color">"I'm blown away by the quality and style of the clothes I
+                                        received
+                                        from Shop.co. From casual wear to elegant dresses, every piece I've bought has
+                                        exceeded my expectations.”</p>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div class="slider swiper-slide">
                                 <div class="stars d-flex">
-
                                     <i class="fa-solid fa-star color"></i>
                                     <i class="fa-solid fa-star color"></i>
                                     <i class="fa-solid fa-star color"></i>
                                     <i class="fa-solid fa-star color"></i>
                                     <i class="fa-solid fa-star color"></i>
                                 </div>
-                                <div class="heading">
-                                    <h4>Saran M.</h4>
-
+                                <div class="heading d-flex-center-only">
+                                    <h4>Alex K.</h4>
                                     <i class="fa-solid fa-circle-check clr"></i>
-
-
                                 </div>
-
-                                <p class="text-color">"I'm blown away by the quality and style of the clothes I received
-                                    from Shop.co. From casual wear to elegant dresses, every piece I've bought has
-                                    exceeded my expectations.”</p>
-
+                                <p class="text-color">"Finding clothes that align with my personal style used to be a
+                                    challenge until I discovered Shop.co. The range of options they offer is truly
+                                    remarkable, catering to a variety of tastes and occasions.”</p>
                             </div>
-
-
-
-
+                            <div class="slider swiper-slide">
+                                <div class="stars d-flex">
+                                    <i class="fa-solid fa-star color"></i>
+                                    <i class="fa-solid fa-star color"></i>
+                                    <i class="fa-solid fa-star color"></i>
+                                    <i class="fa-solid fa-star color"></i>
+                                    <i class="fa-solid fa-star color"></i>
+                                </div>
+                                <div class="heading d-flex-center-only">
+                                    <h4>James L.</h4>
+                                    <i class="fa-solid fa-circle-check clr"></i>
+                                </div>
+                                <p class="text-color">"As someone who's always on the lookout for unique fashion pieces,
+                                    I'm
+                                    thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse
+                                    but
+                                    also on-point with the latest trends.”</p>
+                            </div>
+                            <div class="slider swiper-slide">
+                                <div class="stars d-flex ">
+                                    <i class="fa-solid fa-star color"></i>
+                                    <i class="fa-solid fa-star color"></i>
+                                    <i class="fa-solid fa-star color"></i>
+                                    <i class="fa-solid fa-star color"></i>
+                                    <i class="fa-solid fa-star color"></i>
+                                </div>
+                                <div class="heading d-flex-center-only">
+                                    <h4>Olivia P.</h4>
+                                    <i class="fa-solid fa-circle-check clr"></i>
+                                </div>
+                                <p class="text-color">"As a UI/UX enthusiast, I value simplicity and functionality. This
+                                    t-shirt not only represents those principles but also feels great to wear. It's
+                                    evident
+                                    that the designer poured their creativity into making this t-shirt stand out."</p>
+                            </div>
+                            <div class="slider swiper-slide">
+                                <div class="stars d-flex">
+                                    <i class="fa-solid fa-star color"></i>
+                                    <i class="fa-solid fa-star color"></i>
+                                    <i class="fa-solid fa-star color"></i>
+                                    <i class="fa-solid fa-star color"></i>
+                                    <i class="fa-solid fa-star color"></i>
+                                </div>
+                                <div class="heading d-flex-center-only">
+                                    <h4>Liam K.</h4>
+                                    <i class="fa-solid fa-circle-check clr"></i>
+                                </div>
+                                <p class="text-color">"This t-shirt is a fusion of comfort and creativity. The fabric is
+                                    soft, and the design speaks volumes about the designer's skill. It's like wearing a
+                                    piece of art that reflects my passion for both design and fashion."</p>
+                            </div>
+                            <div class="slider swiper-slide">
+                                <div class="stars d-flex">
+                                    <i class="fa-solid fa-star color"></i>
+                                    <i class="fa-solid fa-star color"></i>
+                                    <i class="fa-solid fa-star color"></i>
+                                    <i class="fa-solid fa-star color"></i>
+                                </div>
+                                <div class="heading d-flex-center-only">
+                                    <h4>Ava H.</h4>
+                                    <i class="fa-solid fa-circle-check clr"></i>
+                                </div>
+                                <p class="text-color">"I'm not just wearing a t-shirt; I'm wearing a piece of design
+                                    philosophy. The intricate details and thoughtful layout of the design make this
+                                    shirt a
+                                    conversation starter."</p>
+                            </div>
                         </div>
-
-
-                        <div></div>
-
-                        <div class="slider swiper-slide">
-                            <div class="stars d-flex">
-                                <i class="fa-solid fa-star color"></i>
-                                <i class="fa-solid fa-star color"></i>
-                                <i class="fa-solid fa-star color"></i>
-                                <i class="fa-solid fa-star color"></i>
-                                <i class="fa-solid fa-star color"></i>
-                            </div>
-                            <div class="heading">
-                                <h4>Alex K.</h4>
-
-                                <i class="fa-solid fa-circle-check clr"></i>
-
-
-                            </div>
-
-                            <p class="text-color">"Finding clothes that align with my personal style used to be a
-                                challenge until I discovered Shop.co. The range of options they offer is truly
-                                remarkable, catering to a variety of tastes and occasions.”</p>
-
-
-
-                        </div>
-
-
-                        <div class="slider swiper-slide">
-                            <div class="stars d-flex">
-                                <i class="fa-solid fa-star color"></i>
-                                <i class="fa-solid fa-star color"></i>
-                                <i class="fa-solid fa-star color"></i>
-                                <i class="fa-solid fa-star color"></i>
-                                <i class="fa-solid fa-star color"></i>
-                            </div>
-                            <div class="heading">
-                                <h4>James L.</h4>
-
-                                <i class="fa-solid fa-circle-check clr"></i>
-
-
-                            </div>
-
-                            <p class="text-color">"As someone who's always on the lookout for unique fashion pieces, I'm
-                                thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but
-                                also on-point with the latest trends.”</p>
-
-
-
-                        </div>
-
-
-                        <div class="slider swiper-slide">
-
-
-
-                            <div class="stars d-flex ">
-                                <i class="fa-solid fa-star color"></i>
-                                <i class="fa-solid fa-star color"></i>
-                                <i class="fa-solid fa-star color"></i>
-                                <i class="fa-solid fa-star color"></i>
-                                <i class="fa-solid fa-star color"></i>
-                            </div>
-                            <div class="heading">
-                                <h4>Olivia P.</h4>
-
-                                <i class="fa-solid fa-circle-check clr"></i>
-
-
-                            </div>
-
-                            <p class="text-color">"As a UI/UX enthusiast, I value simplicity and functionality. This
-                                t-shirt not only represents those principles but also feels great to wear. It's evident
-                                that the designer poured their creativity into making this t-shirt stand out."</p>
-
-
-                        </div>
-
-                        <div class="slider swiper-slide">
-                            <div class="stars d-flex">
-                                <i class="fa-solid fa-star color"></i>
-                                <i class="fa-solid fa-star color"></i>
-                                <i class="fa-solid fa-star color"></i>
-                                <i class="fa-solid fa-star color"></i>
-                                <i class="fa-solid fa-star color"></i>
-                            </div>
-                            <div class="heading">
-                                <h4>Liam K.</h4>
-
-                                <i class="fa-solid fa-circle-check clr"></i>
-
-
-                            </div>
-
-                            <p class="text-color">"This t-shirt is a fusion of comfort and creativity. The fabric is
-                                soft, and the design speaks volumes about the designer's skill. It's like wearing a
-                                piece of art that reflects my passion for both design and fashion."</p>
-
-
-
-                        </div>
-
-
-                        <div class="slider swiper-slide">
-                            <div class="stars d-flex">
-                                <i class="fa-solid fa-star color"></i>
-                                <i class="fa-solid fa-star color"></i>
-                                <i class="fa-solid fa-star color"></i>
-                                <i class="fa-solid fa-star color"></i>
-                            </div>
-                            <div class="heading">
-                                <h4>Ava H.</h4>
-
-                                <i class="fa-solid fa-circle-check clr"></i>
-
-
-                            </div>
-
-                            <p class="text-color">"I'm not just wearing a t-shirt; I'm wearing a piece of design
-                                philosophy. The intricate details and thoughtful layout of the design make this shirt a
-                                conversation starter."</p>
-
-
-
-                        </div>
-
-
-
-
-
-
-
                     </div>
-
                 </div>
-
-
             </div>
 
-
+            <div class="footer">
+                <div class="up-to-date d-flex-center">
+                    <div class="latest-offer">
+                        <div class="heading-container d-flex-center left width ">
+                            <h2 class="heading width  ">STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
+                        </div>
+                        <div class=" d-flex-coloum buttons">
+                            <div class="button d-flex-center-only">
+                                <i class="fa-regular fa-envelope color"></i>
+                                <input class="outline" type="email" id="email" name="email"
+                                    placeholder="Enter your email address">
+                            </div>
+                            <div class="button d-flex-center-only">
+                                <button class="btn">Subscribe to Newsletter</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="information-section">
+                    <div class="info">
+                        <div class="information ">
+                            <div class="website">
+                                <div class="heading-container d-flex-center left width margin-0 ">
+                                    <h2 class="heading width   ">SHOP.CO</h2>
+                                </div>
+                                <p class="color">We have clothes that suits your style and which you’re proud to wear.
+                                    From
+                                    women to men.</p>
+                                <div class="social-icons">
+                                    <div class="social-icon d-flex-center"><i class="fa-brands fa-twitter icon d-flex-center"></i></div>
+                                    <div class="social-icon d-flex-center clr"><i class="fa-brands fa-facebook-f icon d-flex-center "></i></div>
+                                    <div class="social-icon d-flex-center"><i class="fa-brands fa-instagram icon d-flex-center"></i></div>
+                                    <div class="social-icon d-flex-center"><i class="fa-brands fa-github icon d-flex-center"></i></div>
+                                </div>
+                            </div>
+                            <div class="details d-flex-space-between">
+                                <div class="detail ">
+                                    <div class="company d-flex-coloum width">
+                                        <p class="heading">COMPANY</p>
+                                        <p class="text">About</p>
+                                        <p class="text">Features</p>
+                                        <p class="text">works</p>
+                                        <p class="text">Career</p>
+                                    </div>
+                                    <div class="company d-flex-coloum">
+                                        <p class="heading">HELP</p>
+                                        <p class="text">Customer Support</p>
+                                        <p class="text">Deleivery Details</p>
+                                        <p class="text">Terms & Conditions</p>
+                                        <p class="text">Privacy Policy</p>
+                                    </div>
+                                </div>
+                                <div class="detail">
+                                    <div class="company d-flex-coloum">
+                                        <p class="heading">FCQ</p>
+                                        <p class="text">Account</p>
+                                        <p class="text">Manage Deliveries</p>
+                                        <p class="text">Orders</p>
+                                        <p class="text">Payments</p>
+                                    </div>
+                                    <div class="company d-flex-coloum">
+                                        <p class="heading">RESOURCES</p>
+                                        <p class="text">Free eBooks</p>
+                                        <p class="text">Development Tutorial</p>
+                                        <p class="text">How to - Blog</p>
+                                        <p class="text">Youtube Playlist</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr style="width:92%;margin: auto;background-color:#0000001A; border: none;height: 1px;">
+                        <div class="payment-section d-flex-space-between">
+                            <p class="color margin-0">Shop.co <i class="fa-regular fa-copyright color"></i> 2003-2033,
+                                All Rights Reserved</p>
+                            <div class="payments">
+                                <img src="images/visa.png">
+                                <img src="images/Badge (1).png">
+                                <img src="images/Badge (2).png">
+                                <img src="images/Badge (3).png">
+                                <img src="images/Badge (4).png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-
-
-
-        <div class="footer">
-            <div class="up-to-date">
-
-                <div class="latest-offer">
-
-
-
-                    <div class="heading-container left width ">
-                        <h2 class="heading width  ">STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
-
-                    </div>
-
-                    <div class="buttons">
-                        <div class="button">
-
-                            <i class="fa-regular fa-envelope color"></i>
-                            <input class="outline" type="email" id="email" name="email"
-                                placeholder="Enter your email address">
-
-                        </div>
-
-
-                        <div class="button ">
-                            <button class="btn">Subscribe to Newsletter</button>
-                        </div>
-
-                    </div>
-
-
-                </div>
-
-            </div>
-
-            <div class="information-section">
-                <div class="info">
-
-                
-                <div class="information ">
-
-                    <div class="website">
-
-                        <div class="heading-container left width margin-0 ">
-                            <h2 class="heading width   ">SHOP.CO</h2>
-
-                        </div>
-                        
-                        <p class="color">We have clothes that suits your style and which you’re proud to wear. From
-                            women to men.</p>
-
-                        <div class="social-icons">
-                            <div class="social-icon" ><i class="fa-brands fa-twitter icon"></i></div>
-                            <div  class="social-icon clr" ><i class="fa-brands fa-facebook-f icon "></i></div>
-                            <div  class="social-icon" ><i class="fa-brands fa-instagram icon"></i></div>
-                            <div  class="social-icon" ><i class="fa-brands fa-github icon"></i></div>
-                        </div>
-
-                    </div>
-
-                    <div class="details">
-                        <div class="detail ">
-                            <div class="company width">
-                                <p class="heading">COMPANY</p>
-                                <p class="text">About</p>
-                                  <p class="text">Features</p>
-                                    <p class="text">works</p>
-                                      <p class="text">Career</p>
-                                
-
-                            </div>
-
-                             <div class="company">
-                                <p class="heading">HELP</p>
-                                <p class="text">Customer Support</p>
-                                  <p class="text">Deleivery Details</p>
-                                    <p class="text">Terms & Conditions</p>
-                                      <p class="text">Privacy Policy</p>
-                                
-
-                            </div>
-                            
-
-                        </div>
-                        <div class="detail">
-                            <div class="company">
-                                <p class="heading">FCQ</p>
-                                <p class="text">Account</p>
-                                  <p class="text">Manage Deliveries</p>
-                                    <p class="text">Orders</p>
-                                      <p class="text">Payments</p>
-                                
-
-                            </div>
-                            <div class="company">
-                                <p class="heading">RESOURCES</p>
-                                <p class="text">Free eBooks</p>
-                                  <p class="text">Development Tutorial</p>
-                                    <p class="text">How to - Blog</p>
-                                      <p class="text">Youtube Playlist</p>
-                                
-
-                            </div>
-                            
-
-                        </div>
-
-                    </div>
-
-
-                    
-                    
-                    </div>
-                    <hr style="width:92%;margin: auto;background-color:#0000001A; border: none;height: 1px;">
-
-
-                    <div class="payment-section">
-                        
-                            <p class="color margin-0">Shop.co <i class="fa-regular fa-copyright color"></i> 2003-2033, All Rights Reserved</p>
-                            
-                    
-                        <div class="payments">
-                            
-                    
-                                <img  src="images/visa.png">
-                    
-                                <img  src="images/Badge (1).png">
-
-                           
-
-                                <img  src="images/Badge (2).png">
-                          
-
-                                <img  src="images/Badge (3).png">
-                            
-                                <img  src="images/Badge (4).png">
-
-                            </div>
-                                
-
-
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-
-        </div>
-
-
-
     </div>
 
-
-
-    <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper(".mySwiper", {
-
             slidesPerView: 3,
             spaceBetween: 30,
-             breakpoints:{
-              
-                892:{
-
-                                slidesPerView: 3,
-                                spaceBetween:30,
+            breakpoints: {
+                892: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
                 },
-                882:{
-                                slidesPerView: 2,
-                                spaceBetween:30,
+                882: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
                 },
-                550:{
-                   slidesPerView: 1,
-                                spaceBetween:30, 
-                },
-                350:{
-                      slidesPerView: 1,
-                                spaceBetween:30,
-                },
-
-                300:{
+                550: {
                     slidesPerView: 1,
-                                spaceBetween:30, 
+                    spaceBetween: 30,
+                },
+                350: {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                },
+                300: {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
                 }
-
             },
             freeMode: true,
             navigation: {
@@ -949,56 +445,53 @@
         });
     </script>
 
-
     <script>
+        var swiper = new Swiper(".mySwiPer", {
 
-        var swiper =new Swiper(".mySwiPer",{
-            // slidesPerView: 4,
-            
-            breakpoints:{
-                1272:{
+            breakpoints: {
+                1272: {
                     slidesPerView: 4,
                     spaceBetween: 30,
                 },
-                1065:{
-                     slidesPerView: 4,
+                1065: {
+                    slidesPerView: 4,
                     spaceBetween: 30,
                 },
-                892:{
-
-                                slidesPerView: 3,
-                                spaceBetween:30,
+                892: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
                 },
-                882:{
-                                slidesPerView: 2,
-                                spaceBetween:30,
+                882: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
                 },
-                550:{
-                   slidesPerView: 2,
-                                spaceBetween:30, 
+                550: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
                 },
-                400:{
-                      slidesPerView: 2,
-                                spaceBetween:30,
+                400: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
                 },
-
             },
-            autoplay:{
-                delay:2000
+            autoplay: {
+                delay: 2000
 
             }
         });
     </script>
 
-<script src="js/script.js"></script>
-<script>
-const filterCollection1=filterProductsCollection("new-arrival");
-displayProducts("newArrival",filterCollection1);
-</script>
-<script>
-const filterCollection=filterProductsCollection("top-selling");
-displayProducts("top-selling",filterCollection);
-</script>
+    <script src="js/script.js"></script>
+
+    <script>
+        const filterCollection1 = filterProductsCollection("new-arrival");
+        displayProducts("newArrival", filterCollection1);
+    </script>
+
+    <script>
+        const filterCollection = filterProductsCollection("top-selling");
+        displayProducts("top-selling", filterCollection);
+    </script>
 
 </body>
 

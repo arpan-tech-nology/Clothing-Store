@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,7 @@
 
     <link rel="stylesheet" href="static/css/style.css">
 
-
-      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
@@ -18,17 +18,16 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-   <div class="product-detail-page">
 
-      <div class="announcement">
-            <div class="text-wrap">
+<body>
+    <div class="product-detail-page ">
+
+         <div class="announcement d-flex-center-only">
+            <div class="text-wrap d-flex-center">
                 <div class="text">Sign up and get 20% off to your first order.</div>
                 <div class="text text-weight"> <u> Sign Up Now</u></div>
 
@@ -37,268 +36,301 @@
             <div class="cross"><i class="fa-solid fa-xmark"></i></div>
         </div>
 
-        
-        <div class="nav-bar">
-
-            <div class="logo">
-                <h1 class="heading">SHOP.CO</h1>
-            </div>
-
-            <div class="nav-items">
-                <ul class="nav-item">
-                    <li class="nav-list dropdown" data-target="menu1"><a class="nav-link" href="#">Shop <span
-                                class="material-symbols-outlined">stat_minus_1</span></a>
-
-                        <ul class="nav-subitem" data-target="menu1">
-                            <li class="nav-sublist"><a class="nav-sublink" href="#">Categorie1</a></li>
-                            <li class="nav-sublist"><a class="nav-sublink" href="#">Categorie2 </a></li>
-                            <li class="nav-sublist"><a class="nav-sublink" href="#">Categorie3</a></li>
-                        </ul>
-
-                    </li>
-
-                    <li class="nav-list"><a class="nav-link" href="#">On Sale</a></li>
-                    <li class="nav-list"><a class="nav-link" href="#">New Arrivals</a></li>
-                    <li class="nav-list"><a class="nav-link" href="#">Brands</a>
-
-                    </li>
-                </ul>
-            </div>
-
-            <div class="icon">
-                <div class="search">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+         <div class="nav-bar d-flex-center" id="navbar">
 
 
-                    <input type="text" class="input-line" id="search" placeholder="Search">
+            <div class="width d-flex-space-between">
 
 
+                <div class="logo d-flex ">
+                    <div>
+                        <button class="sidebar-toggler sidebutton " title="sidebar"><i
+                                class="fa-solid fa-bars"></i></button>
+                    </div>
+                    <h1 class="heading">SHOP.CO</h1>
                 </div>
-                <span class="material-symbols-outlined">
-                    shopping_cart
-                </span>
-                <span class="material-symbols-outlined">
-                    account_circle
-                </span>
+
+                <div class="nav-items">
+                    <ul class="nav-item d-flex-space-between">
+                        <li class="nav-list"><a class="nav-link d-flex-center" href="categoryPage.html">Shop</a> </li>
+                        <li class="nav-list"><a class="nav-link d-flex-center" href="#">On Sale</a></li>
+                        <li class="nav-list"><a class="nav-link d-flex-center" href="#">New Arrivals</a></li>
+                        <li class="nav-list"><a class="nav-link d-flex-center" href="#">Brands</a>
+
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="icon d-flex-space-between">
+                    <div class="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+
+                        <input type="text" class="input-line" id="search" placeholder="Search">
+
+
+                    </div>
+                    <div id="search-item" class="header-search"></div>
+                    <span class="material-symbols-outlined">
+                        shopping_cart
+                    </span>
+                    <span class="material-symbols-outlined">
+                        account_circle
+                    </span>
+                </div>
+
+
             </div>
-
-
-
         </div>
+
+        <div class="container" id="sidebar">
+            <div class="container-overlay sidebar-toggler"></div>
+            <ul class="menu d-flex-coloum">
+                <li style="text-align: right;" class="menuItem"> <button class="sidebar-toggler  button2"><i
+                            class="fa-solid fa-xmark"></i></button></li>
+                <li class="menuItem"><a class="menuLink" href="categoryPage.html"> Shop</a></li>
+                <li  class="menuItem "><a class="menuLink" href="#"> On Sale</a>  </li>
+                <li class="menuItem"><a class="menuLink" href="#">New Arrivals</a></li>
+                <li class="menuItem"> <a class="menuLink" href="#">
+                        Brands</a>
+                </li>
+            </ul>
+        </div>
+
         <div class="line">
             <hr style="width:92%;margin: auto;background-color:#0000001A; border: none;height: 1px;">
-            
         </div>
 
         <div class="product-detail-section">
             <div class="shoping-section">
-                <div class="text ">Home  <span class="material-symbols-outlined text">chevron_right</span></div>
+                <div class="text ">Home <span class="material-symbols-outlined text">chevron_right</span></div>
                 <div class="text ">Shop <span class="material-symbols-outlined text">chevron_right</span></div>
                 <div class="text">Men <span class="material-symbols-outlined text">chevron_right</span></div>
                 <div>T-shirts</div>
-    
             </div>
-            </div>
-
-      
-        <div class="product-detail">
-            <div class="product">
-                <div class="image-product">
-
-                <!-- </div> -->
-            <div class="product-images">
-
-                <!-- <div class="image"><img class="img" ></div>
-                <div class="image"><img class="img" ></div>
-                <div class="image"><img class="img" ></div> -->
-                
-            </div>
-            <div class="featured-img">
-                <img class="img">
-
-            </div>
-
         </div>
 
-
-        <div class="detail">
-        <div class="heading-container left  margin-0 ">
-                            <h2 class="size"></h2>
-                            </div>
-                        <div class="rating">
-
+        <div class="product-detail d-flex-space-between-only">
+            <div class="product d-flex-space-between-only">
+                <div class="image-product d-flex-space-between-only">
+                    <div class="product-images d-flex-coloum">
+                    </div>
+                    <div class="featured-img">
+                        <img class="img">
+                    </div>
+                </div>
+                <div class="detail d-flex-coloum d-flex-space-between-only">
+                    <div class="heading-container left  margin-0 ">
+                        <h2 class="size"></h2>
+                    </div>
+                    <div class="rating d-flex-center-only">
                         <div class="star">
-
-                            <!-- <i class="fa-solid fa-star color"></i>
                             <i class="fa-solid fa-star color"></i>
                             <i class="fa-solid fa-star color"></i>
                             <i class="fa-solid fa-star color"></i>
-                            <i class="fa-solid fa-star-half color"></i> -->
+                            <i class="fa-solid fa-star color"></i>
+                            <i class="fa-solid fa-star-half color"></i>
                         </div>
                         <div class="d-flex">
                             4.5/<p class="clr">5</p>
-
                         </div>
                     </div>
-
-                     <div class="d-flex price-container size">
-
+                    <div class="d-flex price-container size d-flex-center-only">
                         <div class="price d-flex ">
                             $260
                         </div>
                         <s class="color">$300</s>
-                        <div class="discount">-40%</div>
+                        <div class="discount d-flex-center-only">-40%</div>
                     </div>
+                    <p class="paragraph">This graphic t-shirt which is perfect for any occasion. Crafted from a soft and
+                        breathable fabric, it offers superior comfort and style.</p>
+                    <hr style="width:100%;background-color:#0000001A; border: none;height: 1px;">
+                    <p class="paragraph">Select Colors</p>
+                    <div class="color-option">
+                    </div>
+                    <hr style="width:100%;background-color:#0000001A; border: none;height: 1px;">
 
-
-                    <p class="paragraph">This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.</p>
-
-                              <hr style="width:100%;background-color:#0000001A; border: none;height: 1px;">
-
-                            <p class="paragraph">Select Colors</p>
-                            <div class="color-option">
-                                <!-- <div class="color1"><i class="fa-solid fa-circle-check"></i></div>
-                                <div class="color2"><i class="fa-solid fa-circle"></i></div>
-                                <div class="color3"><i class="fa-solid fa-circle"></i></div> -->
-                            </div>
-                             <hr style="width:100%;background-color:#0000001A; border: none;height: 1px;">
-                            
-                            <p class="paragraph">Choose Size</p>
-                            <div class="size-button">
-                                <!-- <button class="btn">Small</button>
-                                <button class="btn">Medium</button>
-                                <button class="btn">Large</button>
-                                <button class="btn">X-Large</button> -->
-                            </div>
-                             <hr style="width:100%;background-color:#0000001A; border: none;height: 1px;">
-                             <div class="quantity-button">
-                                <button class="btn d-flex "><i class="fa-solid fa-minus "></i><div class="quantity"></div><i class="fa-solid fa-plus "></i></button>
-                                <form id="form">
-                                    <input id="input-variant-size" type="hidden">
-                                    <input id="input-variant-id" type="hidden">
-                                    <input id="input-variant-quantity" type="hidden">
-                                    
-                                    <button class="btn1">Add to Cart</button>
-                                    
-                                </form>
-
-
-                             </div>
-                    
-
-                        
-                        </div>
-                        </div>
-                        </div>
-
-
-
-
-         <div class="product-detail-section center ">
-            <div class="shoping-section size">
-                <div class="text ">Product Details  </div>
-                
-                  <div>Rating & Reviews
-                  </div>
+                    <p class="paragraph">Choose Size</p>
+                    <div class="size-button">
+                    </div>
+                    <hr style="width:100%;background-color:#0000001A; border: none;height: 1px;">
+                    <div class="quantity-button d-flex-center-only">
+                        <button class="btn d-flex "><i class="fa-solid fa-minus "></i>
+                            <div class="quantity"></div><i class="fa-solid fa-plus "></i>
+                        </button>
+                        <form id="form">
+                            <input id="input-variant-size" type="hidden">
+                            <input id="input-variant-id" type="hidden">
+                            <input id="input-variant-quantity" type="hidden">
+                            <button class="btn1">Add to Cart</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="product-detail-section center ">
+            <div class="shoping-section  size">
+                <div class="text d-flex-center-only">Product Details </div>
+                <div class="size">Rating & Reviews
+                </div>
                 <div class="text ">FAQs </div>
-    
             </div>
+        </div>
+
+        <hr style="width:90%;margin:auto;background-color:#0000001A; border: none;height: 1px;">
+
+        <div class="reviews">
+            <div class="review d-flex-space-between-only">
+                <div class="text">
+                    <p class="bold">All Reviews</p>
+                                   </div>
+                <div class="button">
+                    <div><img class="btn1" src="images/Frame 19.png"></div>
+                    <button class="btn2">Latest <i class="fa-solid fa-angle-down"></i></button>
+                    <button class="btn3">Write a Review</button>
+                </div>
             </div>
+        </div>
 
-             <hr style="width:90%;margin:auto;background-color:#0000001A; border: none;height: 1px;">
-
-
-
-             <div class="reviews">
-                <div class="review">
-                    <div class="text"> <p class="bold">All Reviews</p><p class="color">(451)</p></div>
-                    <div class="button">
-                        <div ><img class="btn1" src="images/Frame 19.png"></div>
-                        <button class="btn2">Latest <i class="fa-solid fa-angle-down"></i></button>
-                        <button class="btn3">Write a Review</button>
+        <div class="review-box">
+            <div class="review-section">
+                <div class="review-row d-flex-space-between-only disable">
+                    <div class="box">
+                        <div class="box-padding">
+                            <div class="stars d-flex-space-between-only">
+                                <div class="star d-flex">
+                                   <i class="fa-solid fa-star color"></i>
+                                    <i class="fa-solid fa-star color"></i>
+                                    <i class="fa-solid fa-star color"></i>
+                                    <i class="fa-solid fa-star color"></i>
+                                    <i class="fa-solid fa-star-half color"></i>
+                                </div>
+                                <div class="text-color"><i class="fa-solid fa-ellipsis"></i></div>
+                            </div>
+                            <div class="heading d-flex-center-only">
+                                <h4>Samantha D.</h4>
+                                <i class="fa-solid fa-circle-check clr"></i>
+                            </div>
+                            <p class="text-color">"I absolutely love this t-shirt! The design is unique and the fabric
+                                feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's
+                                become my favorite go-to shirt."</p>
+                            <p class="text-color padding">Posted on August 14, 2023</p>
+                        </div>
                     </div>
+
+                    <div class="box">
+                        <div class="box-padding">
+
+                            <div class="stars d-flex-space-between-only">
+                                <div class="star d-flex">
+
+
+                                    <i class="fa-solid fa-star color"></i>
+                                    <i class="fa-solid fa-star color"></i>
+                                    <i class="fa-solid fa-star color"></i>
+                                    <i class="fa-solid fa-star color"></i>
+
+
+                                </div>
+                                <div class="text-color"><i class="fa-solid fa-ellipsis"></i></div>
+
+                            </div>
+                            <div class="heading d-flex-center-only">
+                                <h4>Alex M.</h4>
+
+                                <i class="fa-solid fa-circle-check clr"></i>
+
+
+                            </div>
+
+                            <p class="text-color">"The t-shirt exceeded my expectations! The colors are vibrant and the
+                                print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about
+                                aesthetics, and this t-shirt definitely gets a thumbs up from me."</p>
+
+                            <p class="text-color padding">Posted on August 15, 2023</p>
+                        </div>
+
+                    </div>
+
+
+
+
 
                 </div>
 
 
 
-                
-                
-                
-            </div>
-
-            <div class="review-box">
 
 
+                <div class="review-row d-flex-space-between-only padding">
+                    <div class="box">
+                        <div class="box-padding">
 
-                <div class="review-section">
-                    <div class="review-row">
-                        <div class="box">
-                            <div class="box-padding">
+                            <div class="stars d-flex-space-between-only">
+                                <div class="star d-flex">
 
-                                <div class="stars">
-                                    <div class="star d-flex">
-            
-            
-                                        <i class="fa-solid fa-star color"></i>
-                                        <i class="fa-solid fa-star color"></i>
-                                        <i class="fa-solid fa-star color"></i>
-                                        <i class="fa-solid fa-star color"></i>
-                                         <i class="fa-solid fa-star-half color"></i>
-                                    </div>
-                                    <div class="text-color"><i class="fa-solid fa-ellipsis"></i></div>
-            
+
+                                    <i class="fa-solid fa-star color"></i>
+                                    <i class="fa-solid fa-star color"></i>
+                                    <i class="fa-solid fa-star color"></i>
+                                    <i class="fa-solid fa-star-half color"></i>
+
+
+
                                 </div>
-                                        <div class="heading">
-                                            <h4>Samantha D.</h4>
-                
-                                            <i class="fa-solid fa-circle-check clr"></i>
-                
-                
-                                        </div>
-                
-                                        <p class="text-color">"I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt."</p>
+                                <div class="text-color"><i class="fa-solid fa-ellipsis"></i></div>
 
-                                            <p class="text-color padding">Posted on August 14, 2023</p>
                             </div>
-                            
+                            <div class="heading d-flex-center-only">
+                                <h4>Ethan R.</h4>
+
+                                <i class="fa-solid fa-circle-check clr"></i>
+
+
+                            </div>
+
+                            <p class="text-color"> "This t-shirt is a must-have for anyone who appreciates good design.
+                                The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see
+                                the designer's touch in every aspect of this shirt."
+                            <p>
+
+                            <p class="text-color padding">Posted on August 16, 2023</p>
                         </div>
 
-                        <div class="box">
-                            <div class="box-padding">
+                    </div>
 
-                                <div class="stars">
-                                    <div class="star d-flex">
-            
-            
-                                        <i class="fa-solid fa-star color"></i>
-                                        <i class="fa-solid fa-star color"></i>
-                                        <i class="fa-solid fa-star color"></i>
-                                        <i class="fa-solid fa-star color"></i>
-                                    
-                                         
-                                    </div>
-                                    <div class="text-color"><i class="fa-solid fa-ellipsis"></i></div>
-            
+                    <div class="box">
+                        <div class="box-padding">
+
+                            <div class="stars d-flex-space-between-only">
+                                <div class="star d-flex">
+
+
+                                    <i class="fa-solid fa-star color"></i>
+                                    <i class="fa-solid fa-star color"></i>
+                                    <i class="fa-solid fa-star color"></i>
+                                    <i class="fa-solid fa-star color"></i>
+
+
                                 </div>
-                                        <div class="heading">
-                                            <h4>Alex M.</h4>
-                
-                                            <i class="fa-solid fa-circle-check clr"></i>
-                
-                
-                                        </div>
-                
-                                        <p class="text-color">"The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me."</p>
+                                <div class="text-color"><i class="fa-solid fa-ellipsis"></i></div>
 
-                                            <p class="text-color padding">Posted on August 15, 2023</p>
                             </div>
-                            
+                            <div class="heading d-flex-center-only">
+                                <h4>Olivia P.</h4>
+
+                                <i class="fa-solid fa-circle-check clr"></i>
+
+
+                            </div>
+
+                            <p class="text-color">"As a UI/UX enthusiast, I value simplicity and functionality. This
+                                t-shirt not only represents those principles but also feels great to wear. It's evident
+                                that the designer poured their creativity into making this t-shirt stand out."</p>
+
+                            <p class="text-color padding">Posted on August 17, 2023</p>
                         </div>
-
-
-
-
 
                     </div>
 
@@ -306,476 +338,238 @@
 
 
 
-                     <div class="review-row padding">
-                        <div class="box">
-                            <div class="box-padding">
+                </div>
 
-                                <div class="stars">
-                                    <div class="star d-flex">
-            
-            
-                                        <i class="fa-solid fa-star color"></i>
-                                        <i class="fa-solid fa-star color"></i>
-                                        <i class="fa-solid fa-star color"></i>
-                                         <i class="fa-solid fa-star-half color"></i>
-                                
-                                        
-                                       
-                                    </div>
-                                    <div class="text-color"><i class="fa-solid fa-ellipsis"></i></div>
-            
+
+
+
+                <div class="review-row d-flex-space-between-only">
+                    <div class="box">
+                        <div class="box-padding">
+
+                            <div class="stars d-flex-space-between-only">
+                                <div class="star d-flex">
+
+
+                                    <i class="fa-solid fa-star color"></i>
+                                    <i class="fa-solid fa-star color"></i>
+                                    <i class="fa-solid fa-star color"></i>
+                                    <i class="fa-solid fa-star color"></i>
+
                                 </div>
-                                        <div class="heading">
-                                            <h4>Ethan R.</h4>
-                
-                                            <i class="fa-solid fa-circle-check clr"></i>
-                
-                
-                                        </div>
-                
-                                        <p class="text-color"> "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt."<p>
+                                <div class="text-color"><i class="fa-solid fa-ellipsis"></i></div>
 
-                                            <p class="text-color padding">Posted on August 16, 2023</p>
                             </div>
-                            
+                            <div class="heading d-flex-center-only">
+                                <h4>Liam K.</h4>
+
+                                <i class="fa-solid fa-circle-check clr"></i>
+
+
+                            </div>
+
+                            <p class="text-color">"This t-shirt is a fusion of comfort and creativity. The fabric is
+                                soft, and the design speaks volumes about the designer's skill. It's like wearing a
+                                piece of art that reflects my passion for both design and fashion."</p>
+
+                            <p class="text-color padding">Posted on August 18, 2023</p>
                         </div>
 
-                        <div class="box">
-                            <div class="box-padding">
+                    </div>
 
-                                <div class="stars">
-                                    <div class="star d-flex">
-            
-            
-                                        <i class="fa-solid fa-star color"></i>
-                                        <i class="fa-solid fa-star color"></i>
-                                        <i class="fa-solid fa-star color"></i>
-                                        <i class="fa-solid fa-star color"></i>
-                                            
-                                         
-                                    </div>
-                                    <div class="text-color"><i class="fa-solid fa-ellipsis"></i></div>
-            
+                    <div class="box">
+                        <div class="box-padding">
+
+                            <div class="stars d-flex-space-between-only">
+                                <div class="star d-flex">
+
+
+                                    <i class="fa-solid fa-star color"></i>
+                                    <i class="fa-solid fa-star color"></i>
+                                    <i class="fa-solid fa-star color"></i>
+                                    <i class="fa-solid fa-star color"></i>
+                                    <i class="fa-solid fa-star-half color"></i>
+
                                 </div>
-                                        <div class="heading">
-                                            <h4>Olivia P.</h4>
-                
-                                            <i class="fa-solid fa-circle-check clr"></i>
-                
-                
-                                        </div>
-                
-                                        <p class="text-color">"As a UI/UX enthusiast, I value simplicity and functionality. This t-shirt not only represents those principles but also feels great to wear. It's evident that the designer poured their creativity into making this t-shirt stand out."</p>
+                                <div class="text-color"><i class="fa-solid fa-ellipsis"></i></div>
 
-                                            <p class="text-color padding">Posted on August 17, 2023</p>
                             </div>
-                            
+                            <div class="heading d-flex-center-only">
+                                <h4>Ava H.</h4>
+
+                                <i class="fa-solid fa-circle-check clr"></i>
+
+
+                            </div>
+
+                            <p class="text-color">"I'm not just wearing a t-shirt; I'm wearing a piece of design
+                                philosophy. The intricate details and thoughtful layout of the design make this shirt a
+                                conversation starter."</p>
+
+                            <p class="text-color padding">Posted on August 19, 2023</p>
                         </div>
-
-
-
-
 
                     </div>
 
 
 
 
-                     <div class="review-row">
-                        <div class="box">
-                            <div class="box-padding">
 
-                                <div class="stars">
-                                    <div class="star d-flex">
-            
-            
-                                        <i class="fa-solid fa-star color"></i>
-                                        <i class="fa-solid fa-star color"></i>
-                                        <i class="fa-solid fa-star color"></i>
-                                        <i class="fa-solid fa-star color"></i>
-                                       
-                                    </div>
-                                    <div class="text-color"><i class="fa-solid fa-ellipsis"></i></div>
-            
-                                </div>
-                                        <div class="heading">
-                                            <h4>Liam K.</h4>
-                
-                                            <i class="fa-solid fa-circle-check clr"></i>
-                
-                
-                                        </div>
-                
-                                        <p class="text-color">"This t-shirt is a fusion of comfort and creativity. The fabric is soft, and the design speaks volumes about the designer's skill. It's like wearing a piece of art that reflects my passion for both design and fashion."</p>
-
-                                            <p class="text-color padding">Posted on August 18, 2023</p>
-                            </div>
-                            
-                        </div>
-
-                        <div class="box">
-                            <div class="box-padding">
-
-                                <div class="stars">
-                                    <div class="star d-flex">
-            
-            
-                                        <i class="fa-solid fa-star color"></i>
-                                        <i class="fa-solid fa-star color"></i>
-                                        <i class="fa-solid fa-star color"></i>
-                                        <i class="fa-solid fa-star color"></i>
-                                          <i class="fa-solid fa-star-half color"></i>
-                                         
-                                    </div>
-                                    <div class="text-color"><i class="fa-solid fa-ellipsis"></i></div>
-            
-                                </div>
-                                        <div class="heading">
-                                            <h4>Ava H.</h4>
-                
-                                            <i class="fa-solid fa-circle-check clr"></i>
-                
-                
-                                        </div>
-                
-                                        <p class="text-color">"I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter."</p>
-
-                                            <p class="text-color padding">Posted on August 19, 2023</p>
-                            </div>
-                            
-                        </div>
-
-
-
-
-
-                    </div>
-    
-                        </div>
+                </div>
 
             </div>
 
-              <div class="secondary-btn"> <button class="btn">Load More Reviews</button></div>
+        </div>
 
-
+        <div class="secondary-btn d-flex-center"> <button class="btn">Load More Reviews</button></div>
 
         <div class="cloth-collection padding">
             <div class="heading-container">
-                <h2 class="heading">YOU MIGHT ALSO LIKE</h2>
-
+                <h2 class="heading d-flex-center">YOU MIGHT ALSO LIKE</h2>
             </div>
-
             <div class="cloth-cards">
-                <div class="card">
-                    <div class="card-img">
-                        <img class="img" src="images/image 7 (2).png">
-                    </div>
-                    <div class="padding">
-                        <h2>Polo with Contrast Trims</h2>
-                    </div>
-
-                    <div class="rating">
-
-                        <div class="d-flex">
-
-                            <i class="fa-solid fa-star color"></i>
-                            <i class="fa-solid fa-star color"></i>
-                            <i class="fa-solid fa-star color"></i>
-                            <i class="fa-solid fa-star color"></i>
-                           
-
-                        </div>
-                        <div class="d-flex">
-                            4.0/<p class="clr">5</p>
-
-                        </div>
-                    </div>
-                    <div class="d-flex price-container">
-
-                        <div class="price d-flex">
-                            $212
-                            <s class="color">$224</s>
-                        </div>
-                        <div class="discount">-20%</div>
-                    </div>
-
-
-                </div>
-                <div class="card">
-                    <div class="card-img">
-
-                        <img class="img" src="images/image 8 (2).png">
-                    </div>
-                    <div class="padding">
-
-                        <h2>Gradient Graphic T-shirt</h2>
-                    </div>
-                    <div class="rating">
-
-                        <div class="d-flex">
-
-                            <i class="fa-solid fa-star color"></i>
-                            <i class="fa-solid fa-star color"></i>
-                            <i class="fa-solid fa-star color"></i>
-                              <i class="fa-solid fa-star-half color"></i>
-                            
-
-                        </div>
-                        <div class="d-flex">
-                            3.5/<p class="clr">5</p>
-
-                        </div>
-
-
+                <div class="swiper mySwiPer">
+                    <div class="swiper-wrapper" id="newArrival">
 
                     </div>
-                    <div class="price">
-                        $145
-                    </div>
-
-
-
-
-                </div>
-                <div class="card">
-                    <div class="card-img">
-                        <img class="img" src="images/image 9 (2).png">
-
-                    </div>
-                    <div class="padding">
-
-                        <h3>Polo with Tipping Details</h3>
-                    </div>
-
-                    <div class="rating">
-
-                        <div class="d-flex">
-
-                            <i class="fa-solid fa-star color"></i>
-                            <i class="fa-solid fa-star color"></i>
-                            <i class="fa-solid fa-star color"></i>
-                            <i class="fa-solid fa-star color"></i>
-                              <i class="fa-solid fa-star-half color"></i>
-
-
-                        </div>
-                        <div class="d-flex">
-                            4.5/<p class="clr">5</p>
-
-                        </div>
-                    </div>
-                    <div class="price">
-                        $180
-                    </div>
-                    <div>
-
-
-                    </div>
-
-                </div>
-                <div class="card">
-
-                    <div class="card-img">
-
-                        <img class="img" src="images/image 10 (2).png">
-                    </div>
-                    <div class="padding">
-
-                        <h3>Black Striped T-shirt</h3>
-                    </div>
-                    <div class="rating">
-
-                        <div class="d-flex">
-
-                            <i class="fa-solid fa-star color"></i>
-                            <i class="fa-solid fa-star color"></i>
-                            <i class="fa-solid fa-star color"></i>
-                            <i class="fa-solid fa-star color"></i>
-                             <i class="fa-solid fa-star color"></i>
-                            
-                        </div>
-                        <div class="d-flex">
-                            5.0/<p class="clr">5</p>
-
-                        </div>
-                    </div>
-
-
-                     <div class="d-flex price-container">
-
-                        <div class="price d-flex">
-                            $210
-                            <s class="color">$150</s>
-                        </div>
-                        <div class="discount">-30%</div>
-                    </div>
-                    <!-- <div class="price">
-                        $210
-                    </div> -->
-
-
                 </div>
 
             </div>
+                   </div>
 
-            <!-- <div class="secondary-btn"> <button class="btn">View All</button></div> -->
-
-
-
-
-
-        </div>
-
-
-
-
-
-
-
-
-
-          <div class="footer">
-            <div class="up-to-date">
-
-                <div class="latest-offer">
-
-
-
-                    <div class="heading-container left width ">
-                        <h2 class="heading width  ">STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
-
-                    </div>
-
-                    <div class="buttons">
-                        <div class="button">
-
-                            <i class="fa-regular fa-envelope color"></i>
-                            <input class="outline" type="email" id="email" name="email"
-                                placeholder="Enter your email address">
-
+     
+            <div class="footer">
+                <div class="up-to-date d-flex-center">
+                    <div class="latest-offer">
+                        <div class="heading-container d-flex-center left width ">
+                            <h2 class="heading width  ">STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
                         </div>
-
-
-                        <div class="button ">
-                            <button class="btn">Subscribe to Newsletter</button>
-                        </div>
-
-                    </div>
-
-
-                </div>
-
-            </div>
-
-            <div class="information-section">
-                <div class="info">
-
-                
-                <div class="information ">
-
-                    <div class="website">
-
-                        <div class="heading-container left width margin-0 ">
-                            <h2 class="heading width   ">SHOP.CO</h2>
-
-                        </div>
-                        
-                        <p class="color">We have clothes that suits your style and which you’re proud to wear. From
-                            women to men.</p>
-
-                        <div class="social-icons">
-                            <div class="social-icon" ><i class="fa-brands fa-twitter icon"></i></div>
-                            <div  class="social-icon clr" ><i class="fa-brands fa-facebook-f icon "></i></div>
-                            <div  class="social-icon" ><i class="fa-brands fa-instagram icon"></i></div>
-                            <div  class="social-icon" ><i class="fa-brands fa-github icon"></i></div>
-                        </div>
-
-                    </div>
-
-                    <div class="details">
-                        <div class="detail ">
-                            <div class="company">
-                                <p class="heading">COMPANY</p>
-                                <p class="text">About</p>
-                                  <p class="text">Features</p>
-                                    <p class="text">works</p>
-                                      <p class="text">Career</p>
-                                
-
+                        <div class=" d-flex-coloum buttons">
+                            <div class="button d-flex-center-only">
+                                <i class="fa-regular fa-envelope color"></i>
+                                <input class="outline" type="email" id="email" name="email"
+                                    placeholder="Enter your email address">
                             </div>
-
-                             <div class="company">
-                                <p class="heading">HELP</p>
-                                <p class="text">Customer Support</p>
-                                  <p class="text">Deleivery Details</p>
-                                    <p class="text">Terms & Conditions</p>
-                                      <p class="text">Privacy Policy</p>
-                                
-
+                            <div class="button d-flex-center-only">
+                                <button class="btn">Subscribe to Newsletter</button>
                             </div>
-                            
-
-                        </div>
-                        <div class="detail">
-                            <div class="company">
-                                <p class="heading">FCQ</p>
-                                <p class="text">Account</p>
-                                  <p class="text">Manage Deliveries</p>
-                                    <p class="text">Orders</p>
-                                      <p class="text">Payments</p>
-                                
-
-                            </div>
-                            <div class="company">
-                                <p class="heading">RESOURCES</p>
-                                <p class="text">Free eBooks</p>
-                                  <p class="text">Development Tutorial</p>
-                                    <p class="text">How to - Blog</p>
-                                      <p class="text">Youtube Playlist</p>
-                                
-
-                            </div>
-                            
-
-                        </div>
-
-                    </div>
-
-
-                    
-                    
-                    </div>
-                    <hr style="width:92%;margin: auto;background-color:#0000001A; border: none;height: 1px;">
-
-
-                    <div class="payment-section">
-                        
-                            <p class="color margin-0">Shop.co <i class="fa-regular fa-copyright color"></i> 2003-2033, All Rights Reserved</p>
-                            
-                    
-                        <div class="payments">
-                            <div class="payment"><i class="fa-brands fa-cc-visa clr"></i></div>
-                             <div class="payment"><i class="fa-brands fa-cc-amazon-pay clr"></i></div>
-                              <div class="payment"><i class="fa-brands fa-cc-paypal clr"></i></div>
-                               <div class="payment"><i class="fa-brands fa-cc-apple-pay clr"></i></div>
-                                <div class="payment"><i class="fa-brands fa-google-pay clr"></i></div>
-
                         </div>
                     </div>
                 </div>
-                
+                <div class="information-section">
+                    <div class="info">
+                        <div class="information ">
+                            <div class="website">
+                                <div class="heading-container d-flex-center left width margin-0 ">
+                                    <h2 class="heading width   ">SHOP.CO</h2>
+                                </div>
+                                <p class="color">We have clothes that suits your style and which you’re proud to wear.
+                                    From
+                                    women to men.</p>
+                                <div class="social-icons">
+                                    <div class="social-icon d-flex-center"><i class="fa-brands fa-twitter icon d-flex-center"></i></div>
+                                    <div class="social-icon d-flex-center clr"><i class="fa-brands fa-facebook-f icon d-flex-center "></i></div>
+                                    <div class="social-icon d-flex-center"><i class="fa-brands fa-instagram icon d-flex-center"></i></div>
+                                    <div class="social-icon d-flex-center"><i class="fa-brands fa-github icon d-flex-center"></i></div>
+                                </div>
+                            </div>
+                            <div class="details d-flex-space-between">
+                                <div class="detail ">
+                                    <div class="company d-flex-coloum width">
+                                        <p class="heading">COMPANY</p>
+                                        <p class="text">About</p>
+                                        <p class="text">Features</p>
+                                        <p class="text">works</p>
+                                        <p class="text">Career</p>
+                                    </div>
+                                    <div class="company d-flex-coloum">
+                                        <p class="heading">HELP</p>
+                                        <p class="text">Customer Support</p>
+                                        <p class="text">Deleivery Details</p>
+                                        <p class="text">Terms & Conditions</p>
+                                        <p class="text">Privacy Policy</p>
+                                    </div>
+                                </div>
+                                <div class="detail">
+                                    <div class="company d-flex-coloum">
+                                        <p class="heading">FCQ</p>
+                                        <p class="text">Account</p>
+                                        <p class="text">Manage Deliveries</p>
+                                        <p class="text">Orders</p>
+                                        <p class="text">Payments</p>
+                                    </div>
+                                    <div class="company d-flex-coloum">
+                                        <p class="heading">RESOURCES</p>
+                                        <p class="text">Free eBooks</p>
+                                        <p class="text">Development Tutorial</p>
+                                        <p class="text">How to - Blog</p>
+                                        <p class="text">Youtube Playlist</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr style="width:92%;margin: auto;background-color:#0000001A; border: none;height: 1px;">
+                        <div class="payment-section d-flex-space-between">
+                            <p class="color margin-0">Shop.co <i class="fa-regular fa-copyright color"></i> 2003-2033,
+                                All Rights Reserved</p>
+                            <div class="payments">
+                                <img src="images/visa.png">
+                                <img src="images/Badge (1).png">
+                                <img src="images/Badge (2).png">
+                                <img src="images/Badge (3).png">
+                                <img src="images/Badge (4).png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+    </div>
 
-        </div>
+    <script src="js/script.js"></script>
+    <script src="js/produtPage.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
 
-            
-            
+        var swiper = new Swiper(".mySwiPer", {
+              breakpoints: {
+                1272: {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                },
+                1065: {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                },
+                892: {
 
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+                882: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                550: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                400: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+            },
+            autoplay: {
+                delay: 2000
 
-          </div>
+            }
+        });
+    </script>
 
-<script src="js/script.js"></script>
-<script src="js/produtPage.js"></script>
+    <script>
+        const filterCollection1 = filterProductsCollection("new-arrival");
+        displayProducts("newArrival", filterCollection1);
+    </script>
 
 </body>
+
 </html>
